@@ -12,88 +12,88 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Customer Segmentation & LTV Prediction',
-      description: 'Built ML models to segment customers and predict lifetime value, resulting in 35% increase in targeted campaign effectiveness.',
+      title: 'Marketing Incrementality Analysis & Budget Optimization',
+      description: 'Conducted data analysis on 19,656 marketing touchpoints to reveal 52–61% attribution bias, enabling $33.6M budget optimization through statistical modeling.',
       image: customerSegmentation,
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Tableau', 'AWS'],
+      technologies: ['Python', 'Statistical Analysis', 'Geo-Lift Testing', 'A/B Testing', 'Causal Inference'],
       metrics: [
-        { label: 'ROI Increase', value: '35%', icon: TrendingUp },
-        { label: 'Customers Analyzed', value: '2.5M', icon: Users },
-        { label: 'Revenue Impact', value: '$12M', icon: DollarSign }
+        { label: 'Budget Impact', value: '$33.6M', icon: DollarSign },
+        { label: 'Attribution Bias', value: '52-61%', icon: TrendingUp },
+        { label: 'Email vs TV ROI', value: '1.71x vs 0.21x', icon: BarChart3 }
       ],
       highlights: [
-        'Identified 5 distinct customer segments with unique purchasing patterns',
-        'Developed predictive model with 92% accuracy for customer lifetime value',
-        'Created automated dashboard for real-time customer insights',
-        'Reduced customer acquisition cost by 28% through targeted marketing'
+        'Analyzed 19,656 marketing touchpoints with advanced statistical modeling',
+        'Implemented A/B testing and Geo-Lift experimental design',
+        'Developed Multi-Touch Attribution models revealing Email ROI 1.71x vs TV ROI 0.21x',
+        'Automated budget reallocation algorithm recommending $13.5M channel optimization'
       ],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/advaitathalye',
       liveUrl: '#',
-      category: 'Machine Learning'
+      category: 'Marketing Analytics'
     },
     {
-      title: 'Sales Forecasting Dashboard',
-      description: 'Developed an interactive dashboard for sales forecasting using time series analysis, improving forecast accuracy by 40%.',
+      title: 'LendingClub BI Dashboard',
+      description: 'Cut loan portfolio review time from 3 hours to under 10 mins by automating interactive dashboards, supporting faster credit-risk evaluation scenarios.',
       image: salesForecasting,
-      technologies: ['R', 'Shiny', 'Power BI', 'SQL Server', 'Prophet'],
+      technologies: ['n8n', 'Supabase', 'Chart.js', 'API Integration', 'SQL'],
       metrics: [
-        { label: 'Forecast Accuracy', value: '94%', icon: BarChart3 },
-        { label: 'Time Saved', value: '15hrs/week', icon: TrendingUp },
-        { label: 'Business Units', value: '8', icon: Users }
+        { label: 'Time Saved', value: '3hrs → 10min', icon: TrendingUp },
+        { label: 'Process', value: 'Automated', icon: BarChart3 },
+        { label: 'Risk Analysis', value: 'Enhanced', icon: Users }
       ],
       highlights: [
-        'Implemented ARIMA and Prophet models for seasonal trend analysis',
-        'Built automated ETL pipeline processing 500K+ daily transactions',
-        'Designed executive dashboard with drill-down capabilities',
-        'Reduced forecasting errors by 40% compared to previous methods'
+        'Automated queries with n8n workflows eliminating manual chart generation',
+        'Built loan segmentation visuals highlighting high-risk categories',
+        'Improved data accessibility and credit-risk evaluation speed',
+        'Created interactive dashboards with real-time loan approval trends'
       ],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/advaitathalye',
       liveUrl: '#',
       category: 'Business Intelligence'
     },
     {
-      title: 'Supply Chain Optimization',
-      description: 'Analyzed supply chain inefficiencies and implemented optimization algorithms, reducing costs by $2.8M annually.',
+      title: 'Company Hiring Trends 2025 Dashboard',
+      description: 'Developed a BI dashboard from 1000+ LinkedIn job posts to reveal hiring spikes, recruiter hotspots, and geographic demand patterns.',
       image: supplyChain,
-      technologies: ['Python', 'Optimization', 'Pandas', 'Plotly', 'Docker'],
+      technologies: ['Power BI', 'DAX', 'SQL', 'Excel', 'Data Mining'],
       metrics: [
-        { label: 'Cost Reduction', value: '$2.8M', icon: DollarSign },
-        { label: 'Efficiency Gain', value: '22%', icon: TrendingUp },
-        { label: 'Locations', value: '45', icon: BarChart3 }
+        { label: 'Job Posts Analyzed', value: '1000+', icon: BarChart3 },
+        { label: 'Time Saved', value: '3hrs/week', icon: TrendingUp },
+        { label: 'Users Helped', value: '20+', icon: Users }
       ],
       highlights: [
-        'Optimized inventory levels across 45 distribution centers',
-        'Reduced stockouts by 65% while maintaining service levels',
-        'Implemented demand sensing algorithms for better forecasting',
-        'Created automated alerting system for supply chain anomalies'
+        'Integrated filters and KPI cards reducing manual job search effort by 3+ hours/week',
+        'Identified hiring velocity patterns and geographic demand trends',
+        'Enhanced dashboard usability based on feedback from 20+ job seekers',
+        'Revealed recruiter hotspots and optimal application timing strategies'
       ],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/advaitathalye',
       liveUrl: '#',
-      category: 'Operations Research'
+      category: 'Business Intelligence'
     },
     {
-      title: 'Real-time Fraud Detection',
-      description: 'Built ML pipeline for real-time fraud detection with 99.2% accuracy, preventing $5M+ in fraudulent transactions.',
-      image: '/api/placeholder/600/400',
-      technologies: ['Python', 'TensorFlow', 'Kafka', 'Redis', 'MongoDB'],
+      title: 'CX Trends Analysis - Airline Reviews',
+      description: 'Designed Tableau dashboard visualizing 20K+ airline reviews, revealing 5 route-cabin combos with 15–25% NPS decline, enabling targeted service improvements.',
+      image: customerSegmentation,
+      technologies: ['Tableau', 'Excel', 'Data Cleaning', 'NPS Analysis'],
       metrics: [
-        { label: 'Detection Accuracy', value: '99.2%', icon: BarChart3 },
-        { label: 'Fraud Prevented', value: '$5M+', icon: DollarSign },
-        { label: 'Response Time', value: '<100ms', icon: TrendingUp }
+        { label: 'Reviews Analyzed', value: '20K+', icon: BarChart3 },
+        { label: 'NPS Decline Found', value: '15-25%', icon: TrendingUp },
+        { label: 'Route-Cabin Issues', value: '5', icon: Users }
       ],
       highlights: [
-        'Deployed ensemble model with XGBoost and Neural Networks',
-        'Built real-time streaming pipeline processing 10K+ transactions/sec',
-        'Reduced false positives by 78% through feature engineering',
-        'Created interpretable ML model for regulatory compliance'
+        'Cleaned and merged multi-source data enabling metric filtering by traveler type',
+        'Identified 5 specific route-cabin combinations with significant NPS decline',
+        'Created interactive dashboard with seat class and review category filters',
+        'Enabled targeted service improvements through data-driven insights'
       ],
-      githubUrl: '#',
-      liveUrl: '#',
-      category: 'Machine Learning'
+      githubUrl: 'https://github.com/advaitathalye',
+      liveUrl: 'https://public.tableau.com/views/your-dashboard',
+      category: 'Customer Analytics'
     }
   ];
 
-  const categories = ['All', 'Machine Learning', 'Business Intelligence', 'Operations Research'];
+  const categories = ['All', 'Marketing Analytics', 'Business Intelligence', 'Customer Analytics'];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredProjects = selectedCategory === 'All' 

@@ -5,87 +5,72 @@ import { Building2, Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      company: 'TechFlow Analytics',
-      role: 'Senior Data Analyst',
-      period: '2022 - Present',
-      location: 'San Francisco, CA',
-      type: 'Full-time',
-      description: 'Leading analytics initiatives for a $500M SaaS company, focusing on customer behavior analysis and growth optimization.',
-      achievements: [
-        'Built predictive models that increased customer retention by 28%',
-        'Developed automated reporting system saving 20+ hours weekly',
-        'Led cross-functional team of 5 analysts and engineers',
-        'Implemented A/B testing framework used across 15+ product teams'
-      ],
-      technologies: ['Python', 'SQL', 'Tableau', 'AWS', 'Snowflake', 'dbt']
-    },
-    {
-      company: 'DataVision Consulting',
+      company: 'SSi People',
       role: 'Data Analyst',
-      period: '2020 - 2022',
-      location: 'Remote',
+      period: 'Aug 2022 - Aug 2023',
+      location: 'India',
       type: 'Full-time',
-      description: 'Provided data analytics consulting services to Fortune 500 clients across retail, finance, and healthcare sectors.',
+      description: 'Led analytics initiatives for Big 4 consulting vendors, focusing on recruitment funnel optimization and automated BI dashboard development.',
       achievements: [
-        'Delivered 12+ analytics projects with average ROI of 300%',
-        'Specialized in customer segmentation and market basket analysis',
-        'Built ML models for demand forecasting with 95%+ accuracy',
-        'Created executive dashboards for C-level stakeholders'
+        'Automated ETL pipelines & Power BI dashboards saving 30 hrs/week and enabling same-day hiring decisions',
+        'Analyzed 3 recruitment funnels to pinpoint 35% candidate drop-off, reducing time-to-fill from 45 to 31 days',
+        'Executed sourcing via A/B tests, boosting interview conversion 12% to 22% for 200+ roles/month',
+        'Delivered KPI dashboards that reduced prep time from 2 hrs to 15 mins for C-suite hiring reviews'
       ],
-      technologies: ['R', 'Python', 'Power BI', 'Azure', 'SQL Server']
+      technologies: ['Power BI', 'ETL Pipelines', 'A/B Testing', 'SQL', 'Dashboard Automation']
     },
     {
-      company: 'Metro Financial Services',
-      role: 'Junior Data Analyst',
-      period: '2019 - 2020',
-      location: 'New York, NY',
+      company: 'Pace Infotech',
+      role: 'Data Analyst',
+      period: 'Aug 2021 - Aug 2022',
+      location: 'India',
       type: 'Full-time',
-      description: 'Focused on risk analytics and fraud detection for a mid-size financial services company.',
+      description: 'Focused on real-time SLA monitoring and operations optimization through advanced Tableau dashboards and workflow automation.',
       achievements: [
-        'Developed fraud detection model reducing false positives by 40%',
-        'Automated risk reporting process improving efficiency by 60%',
-        'Conducted statistical analysis for regulatory compliance',
-        'Collaborated with IT team to implement data governance policies'
+        'Delivered real-time SLA dashboards in Tableau, removing 6-hour reporting lag for 50 client accounts',
+        'Cut Tier-1 false alarms by 25% by investigating root causes and refining alert thresholds',
+        'Reduced analyst onboarding 40% by creating standardized ETL workflow guides for 8-member team',
+        'Improved data accuracy by 20% by automating validation for 10K+ SLA logs, preventing client escalations'
       ],
-      technologies: ['SQL', 'Excel', 'SAS', 'Python', 'Tableau']
+      technologies: ['Tableau', 'SLA Monitoring', 'ETL Workflows', 'Data Validation', 'Process Automation']
     },
     {
-      company: 'University Research Lab',
-      role: 'Research Assistant',
-      period: '2018 - 2019',
-      location: 'Boston, MA',
-      type: 'Part-time',
-      description: 'Conducted statistical research on economic trends and consumer behavior patterns.',
+      company: 'Visvesvaraya Technological University',
+      role: 'Data Analyst Intern',
+      period: 'Jul 2020 - Jul 2021',
+      location: 'India',
+      type: 'Internship',
+      description: 'Automated admissions reporting and built strategic dashboards for university leadership, focusing on enrollment optimization.',
       achievements: [
-        'Co-authored 2 peer-reviewed papers on behavioral economics',
-        'Analyzed large-scale survey data with 50K+ responses',
-        'Developed statistical models for economic forecasting',
-        'Presented findings at 3 academic conferences'
+        'Saved 20 hrs/week by automating ad-hoc and recurring admissions reports using Python and SQL',
+        'Created Power BI segmentation dashboards increasing admitted-to-enrolled conversion from 34% to 38%',
+        'Enabled strategic fund reallocation by analyzing GPA-scholarship correlation using R, boosting high-performer enrollment 12%',
+        'Delivered data-driven insights through storytelling to admissions leadership, shaping scholarship criteria updates'
       ],
-      technologies: ['R', 'SPSS', 'Stata', 'LaTeX']
+      technologies: ['Python', 'SQL', 'R', 'Power BI', 'Statistical Analysis']
     }
   ];
 
   const education = [
     {
-      institution: 'Stanford University',
-      degree: 'MS in Data Science',
-      period: '2017 - 2019',
-      details: 'Specialization in Machine Learning and Statistical Analysis'
+      institution: 'Cleveland State University',
+      degree: 'Master\'s in Management Information Systems',
+      period: 'Graduated May 2025',
+      details: 'SQL & Database Design, Data Mining & BI, ETL & Data Visualization, IT Governance & Compliance'
     },
     {
-      institution: 'UC Berkeley',
-      degree: 'BS in Economics & Statistics',
-      period: '2013 - 2017',
-      details: 'Magna Cum Laude, Phi Beta Kappa'
+      institution: 'Visvesvaraya Technological University',
+      degree: 'Bachelor\'s in Computer Science',
+      period: 'Graduated Sep 2022',
+      details: 'Algorithms, AI & Machine Learning, Data Science, Data Visualization (Python/Excel)'
     }
   ];
 
   const certifications = [
-    'AWS Certified Data Analytics - Specialty',
-    'Google Professional Data Engineer',
-    'Tableau Desktop Certified Professional',
-    'Microsoft Azure Data Scientist Associate'
+    'Google Data Analytics Professional Certificate (2025)',
+    'Power BI Data Analyst (In Progress)',
+    'Tableau Desktop Specialist (In Progress)',
+    'SQL for Data Science (Completed)'
   ];
 
   return (

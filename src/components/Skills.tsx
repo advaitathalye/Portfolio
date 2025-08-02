@@ -9,63 +9,63 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Programming Languages',
-      icon: Code2,
-      color: 'data-blue',
-      skills: [
-        { name: 'Python', level: 95, description: 'Data analysis, ML, automation' },
-        { name: 'R', level: 90, description: 'Statistical analysis, visualization' },
-        { name: 'SQL', level: 92, description: 'Complex queries, optimization' },
-        { name: 'JavaScript', level: 75, description: 'Web dashboards, D3.js' }
-      ]
-    },
-    {
-      title: 'Data Analysis & ML',
-      icon: Brain,
-      color: 'data-purple',
-      skills: [
-        { name: 'Machine Learning', level: 90, description: 'Supervised/unsupervised learning' },
-        { name: 'Statistical Analysis', level: 95, description: 'Hypothesis testing, regression' },
-        { name: 'Time Series', level: 85, description: 'Forecasting, trend analysis' },
-        { name: 'Deep Learning', level: 80, description: 'Neural networks, TensorFlow' }
-      ]
-    },
-    {
       title: 'Visualization & BI',
       icon: BarChart3,
-      color: 'data-green',
+      color: 'data-blue',
       skills: [
-        { name: 'Tableau', level: 92, description: 'Advanced dashboards, storytelling' },
-        { name: 'Power BI', level: 88, description: 'Executive reporting, DAX' },
-        { name: 'D3.js', level: 75, description: 'Custom interactive visualizations' },
-        { name: 'Plotly', level: 85, description: 'Python/R interactive charts' }
+        { name: 'Power BI (DAX, M Query)', level: 92, description: 'Advanced dashboards, automation' },
+        { name: 'Tableau', level: 88, description: 'Interactive visualizations, storytelling' },
+        { name: 'Looker', level: 75, description: 'Business intelligence, SQL modeling' },
+        { name: 'Excel (Advanced)', level: 90, description: 'Complex formulas, pivot tables, VBA' }
       ]
     },
     {
-      title: 'Databases & Cloud',
+      title: 'Programming & Analytics',
+      icon: Code2,
+      color: 'data-purple',
+      skills: [
+        { name: 'Python (Pandas, NumPy)', level: 88, description: 'Data analysis, statistical modeling' },
+        { name: 'SQL (PostgreSQL, MySQL)', level: 90, description: 'Complex queries, database design' },
+        { name: 'R', level: 82, description: 'Statistical analysis, data mining' },
+        { name: 'BigQuery', level: 78, description: 'Cloud data warehousing' }
+      ]
+    },
+    {
+      title: 'Marketing & Statistical Analysis',
+      icon: Brain,
+      color: 'data-green',
+      skills: [
+        { name: 'A/B Testing', level: 90, description: 'Experimental design, hypothesis testing' },
+        { name: 'Marketing Attribution', level: 85, description: 'Multi-touch, incrementality measurement' },
+        { name: 'Geo-Lift Testing', level: 88, description: 'Causal inference, regional analysis' },
+        { name: 'Statistical Modeling', level: 87, description: 'Regression, forecasting, MMM' }
+      ]
+    },
+    {
+      title: 'Data Engineering & Tools',
       icon: Database,
       color: 'data-orange',
       skills: [
-        { name: 'AWS', level: 85, description: 'S3, Redshift, EMR, Lambda' },
-        { name: 'Snowflake', level: 80, description: 'Data warehousing, optimization' },
-        { name: 'PostgreSQL', level: 88, description: 'Database design, performance' },
-        { name: 'MongoDB', level: 75, description: 'NoSQL, aggregation pipelines' }
+        { name: 'dbt', level: 80, description: 'Data transformation, modeling' },
+        { name: 'ETL Workflows', level: 88, description: 'Pipeline automation, optimization' },
+        { name: 'API Integration', level: 82, description: 'n8n, data connectors' },
+        { name: 'Data Validation', level: 85, description: 'Quality assurance, monitoring' }
       ]
     }
   ];
 
   const tools = [
-    'Jupyter Notebooks', 'Git/GitHub', 'Docker', 'Airflow', 'dbt', 'Spark',
-    'Kafka', 'Redis', 'Elasticsearch', 'Jenkins', 'Kubernetes', 'Terraform'
+    'Power BI', 'Tableau', 'Python', 'SQL', 'R', 'Excel', 'dbt', 'n8n',
+    'BigQuery', 'PostgreSQL', 'Chart.js', 'Supabase', 'Git', 'Jupyter'
   ];
 
   const softSkills = [
-    { skill: 'Problem Solving', description: 'Breaking down complex business problems into analytical solutions' },
-    { skill: 'Communication', description: 'Translating technical insights into business language' },
-    { skill: 'Project Management', description: 'Leading cross-functional analytics projects' },
-    { skill: 'Stakeholder Management', description: 'Working with executives and technical teams' },
-    { skill: 'Mentoring', description: 'Training junior analysts and data scientists' },
-    { skill: 'Business Acumen', description: 'Understanding industry trends and business metrics' }
+    { skill: 'Marketing Analytics', description: 'Incrementality measurement, attribution modeling, budget optimization' },
+    { skill: 'Business Intelligence', description: 'Dashboard development, ETL automation, executive reporting' },
+    { skill: 'Statistical Modeling', description: 'A/B testing, experimental design, causal inference' },
+    { skill: 'Data Storytelling', description: 'Translating complex analytics into actionable business insights' },
+    { skill: 'Process Automation', description: 'Workflow optimization, reducing manual effort through technology' },
+    { skill: 'Cross-functional Collaboration', description: 'Working with technical teams, executives, and stakeholders' }
   ];
 
   useEffect(() => {
@@ -174,20 +174,20 @@ const Skills = () => {
           {/* Skills Summary Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">5+</div>
+              <div className="text-3xl font-bold text-primary mb-2">3+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">15+</div>
-              <div className="text-sm text-muted-foreground">Technologies Mastered</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Projects Completed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">$25M+</div>
+              <div className="text-3xl font-bold text-primary mb-2">$33.6M</div>
               <div className="text-sm text-muted-foreground">Business Impact</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">30+</div>
+              <div className="text-sm text-muted-foreground">Hours Saved Weekly</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">10+</div>
+              <div className="text-sm text-muted-foreground">Tools Mastered</div>
             </div>
           </div>
         </div>

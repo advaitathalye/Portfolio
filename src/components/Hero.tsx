@@ -21,52 +21,62 @@ const Hero = () => {
           <div className="animate-fade-in">
             <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-gradient">Advaita Thalye</span>
+              <span className="text-gradient">Advait Athalye</span>
             </h1>
           </div>
 
           {/* Title */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <h2 className="text-2xl md:text-4xl font-semibold mb-8 text-foreground/90">
-              Data Analytics Professional
+            <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-foreground/90">
+              Data Analyst | Turning Analytics into
+            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-gradient">
+              $33.6M+ Business Impact
             </h2>
           </div>
 
           {/* Description */}
           <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Transforming complex datasets into actionable insights that drive strategic business decisions. 
-              Specialized in machine learning, statistical analysis, and data visualization to unlock growth opportunities.
+              Recent MIS Master's grad with 3+ years experience in BI dashboards, marketing analytics, and statistical modeling. 
+              I love taking messy, complex datasets and turning them into insights that actually make sense to people.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="animate-fade-in-scale flex flex-col sm:flex-row gap-4 justify-center mb-16" style={{ animationDelay: '0.6s' }}>
             <Button variant="hero" size="lg">
-              View My Projects
+              View Projects
+            </Button>
+            <Button variant="outline" size="lg">
+              Download Resume
             </Button>
             <Button variant="outline" size="lg">
               <Mail className="w-5 h-5 mr-2" />
-              Get In Touch
+              Let's Connect
             </Button>
           </div>
 
           {/* Social Links */}
           <div className="animate-fade-in flex justify-center space-x-6 mb-16" style={{ animationDelay: '0.8s' }}>
             <a
-              href="#"
+              href="https://github.com/advaitathalye"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-primary/10 transition-smooth shadow-soft hover:shadow-medium group"
             >
               <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-smooth" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/advaitathalye"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-primary/10 transition-smooth shadow-soft hover:shadow-medium group"
             >
               <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-smooth" />
             </a>
             <a
-              href="mailto:advaita@example.com"
+              href="mailto:advaiitathalye@gmail.com"
               className="p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-primary/10 transition-smooth shadow-soft hover:shadow-medium group"
             >
               <Mail className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-smooth" />

@@ -6,17 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: 'https://github.com/advaita-thalye',
+      href: 'https://github.com/advaitathalye',
       label: 'GitHub'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/advaita-thalye',
+      href: 'https://www.linkedin.com/in/advaitathalye',
       label: 'LinkedIn'
     },
     {
       icon: Mail,
-      href: 'mailto:advaita.thalye@email.com',
+      href: 'mailto:advaiitathalye@gmail.com',
       label: 'Email'
     }
   ];
@@ -37,9 +37,9 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand Section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gradient">Advaita Thalye</h3>
+              <h3 className="text-xl font-semibold text-gradient">Advait Athalye</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Data Analytics Professional passionate about transforming complex data into actionable business insights.
+                Data Analyst passionate about turning complex analytics into $33.6M+ business impact. Recent MIS Master's grad with 3+ years experience.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -77,13 +77,14 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Get In Touch</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>San Francisco, CA</p>
-                <a href="mailto:advaita.thalye@email.com" className="hover:text-primary transition-smooth block">
-                  advaita.thalye@email.com
+                <p>Cleveland, Ohio (Open to relocation)</p>
+                <a href="mailto:advaiitathalye@gmail.com" className="hover:text-primary transition-smooth block">
+                  advaiitathalye@gmail.com
                 </a>
-                <a href="tel:+15551234567" className="hover:text-primary transition-smooth block">
-                  +1 (555) 123-4567
+                <a href="tel:+12169723772" className="hover:text-primary transition-smooth block">
+                  216-972-3772
                 </a>
+                <p className="text-sm text-primary">Authorized to work in US - F1 OPT</p>
               </div>
             </div>
           </div>
@@ -92,7 +93,7 @@ const Footer = () => {
           <div className="pt-8 border-t border-border/50">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-muted-foreground">
-                © {currentYear} Advaita Thalye. All rights reserved.
+                © {currentYear} Advait Athalye. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground flex items-center">
                 Built with <Heart className="w-4 h-4 mx-1 text-red-500" /> using React & TypeScript

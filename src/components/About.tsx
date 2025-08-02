@@ -6,29 +6,30 @@ const About = () => {
   const highlights = [
     {
       icon: TrendingUp,
-      title: 'Business Impact',
-      description: 'Delivered data-driven solutions that increased revenue by 25% and reduced operational costs by 30%'
+      title: '$33.6M Impact',
+      description: 'Delivered marketing budget optimization revealing 52-61% attribution bias through statistical modeling'
     },
     {
       icon: Database,
-      title: 'Data Expertise',
-      description: 'Proficient in SQL, Python, R, and modern BI tools with experience handling datasets of 100M+ records'
+      title: 'ETL Automation',
+      description: 'Built automated pipelines saving 30+ hrs/week and cut time-to-fill from 45 to 31 days for enterprise roles'
     },
     {
       icon: Brain,
-      title: 'Machine Learning',
-      description: 'Built predictive models with 95%+ accuracy for customer segmentation and demand forecasting'
+      title: 'Statistical Analysis',
+      description: 'Expert in A/B testing, geo-lift experiments, and causal inference for marketing attribution modeling'
     },
     {
       icon: PieChart,
-      title: 'Visualization',
-      description: 'Created interactive dashboards that transformed how stakeholders interact with data'
+      title: 'BI Dashboards',
+      description: 'Created Power BI and Tableau dashboards cutting review time from 3 hours to under 10 minutes'
     }
   ];
 
   const technologies = [
-    'Python', 'R', 'SQL', 'Tableau', 'Power BI', 'Excel', 'Jupyter',
-    'Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow', 'AWS', 'Snowflake'
+    'Power BI', 'Python', 'SQL', 'Tableau', 'R', 'DAX', 'M Query',
+    'Pandas', 'NumPy', 'Matplotlib', 'PostgreSQL', 'BigQuery', 'dbt',
+    'A/B Testing', 'Statistical Modeling', 'ETL Workflows', 'API Integration'
   ];
 
   return (
@@ -39,8 +40,9 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I'm a passionate data analytics professional with 5+ years of experience turning raw data into strategic insights. 
-              I thrive on solving complex business problems through analytical thinking and innovative data solutions.
+              Recent MIS Master's graduate from Cleveland State University with 3+ years of hands-on experience 
+              transforming complex data into business-driving insights. I specialize in turning messy datasets 
+              into clear, actionable strategies that executives actually understand and implement.
             </p>
           </div>
 
@@ -62,21 +64,22 @@ const About = () => {
           {/* Story Section */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">My Story</h3>
+              <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  My journey into data analytics began during my economics studies, where I discovered the power of 
-                  statistical analysis to uncover hidden patterns in market behavior. This fascination led me to pursue 
-                  advanced studies in data science and machine learning.
+                  My analytics journey began during my Computer Science studies in India, where I discovered the 
+                  power of data to solve real business problems. This passion led me to pursue an MIS Master's 
+                  at Cleveland State University, focusing on business intelligence and statistical analysis.
                 </p>
                 <p>
-                  Over the past 5 years, I've worked with Fortune 500 companies and innovative startups, helping them 
-                  leverage data to drive strategic decisions. From optimizing marketing campaigns to building predictive 
-                  models for supply chain management, I've seen firsthand how the right data insights can transform businesses.
+                  Over the past 3+ years, I've helped companies from Big 4 consulting to tech startups optimize 
+                  their operations through data. From automating ETL pipelines that save 30+ hours weekly to 
+                  revealing $33.6M in marketing inefficiencies, I've consistently delivered measurable business impact.
                 </p>
                 <p>
-                  What excites me most about data analytics is its endless potential to solve real-world problems. 
-                  Every dataset tells a story, and I'm passionate about uncovering those narratives that drive meaningful change.
+                  What excites me most is making data accessible to everyone. Whether it's cutting loan portfolio 
+                  reviews from 3 hours to 10 minutes or helping executives make faster hiring decisions, I believe 
+                  great analytics should simplify complexity, not add to it.
                 </p>
               </div>
             </div>
@@ -100,15 +103,19 @@ const About = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
-                    Advanced machine learning techniques for time series forecasting
+                    Advanced marketing attribution and incrementality measurement
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
-                    Real-time data processing and streaming analytics
+                    Automated BI dashboard development and ETL optimization
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
-                    Building scalable data infrastructure on cloud platforms
+                    Statistical modeling for business decision optimization
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
+                    Building data-driven cultures in high-growth startups
                   </li>
                 </ul>
               </div>

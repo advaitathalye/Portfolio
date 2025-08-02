@@ -29,19 +29,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'advaita.thalye@email.com',
-      href: 'mailto:advaita.thalye@email.com'
+      value: 'advaiitathalye@gmail.com',
+      href: 'mailto:advaiitathalye@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '216-972-3772',
+      href: 'tel:+12169723772'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Cleveland, Ohio (Open to relocation)',
       href: '#'
     }
   ];
@@ -50,20 +50,14 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/advaita-thalye',
+      href: 'https://github.com/advaitathalye',
       color: 'hover:text-gray-900 dark:hover:text-gray-100'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/advaita-thalye',
+      href: 'https://www.linkedin.com/in/advaitathalye',
       color: 'hover:text-blue-600'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/advaita_thalye',
-      color: 'hover:text-blue-400'
     }
   ];
 
@@ -75,7 +69,8 @@ const Contact = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Let's Connect</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to turn your data into actionable insights? Let's discuss how we can work together to drive your business forward.
+              Ready to discuss how data analytics can drive your business forward? I'm authorized to work in the US (F1 OPT) 
+              and open to opportunities in high-growth startups and data-driven companies.
             </p>
           </div>
 
@@ -237,16 +232,16 @@ const Contact = () => {
             <div className="max-w-3xl mx-auto">
               <h3 className="text-2xl font-semibold mb-4">Ready to Transform Your Data?</h3>
               <p className="text-muted-foreground mb-8">
-                Whether you're looking to optimize business processes, build predictive models, or create compelling 
-                data visualizations, I'm here to help turn your data challenges into competitive advantages.
+                Whether you need marketing attribution analysis, BI dashboard automation, or statistical modeling for business optimization, 
+                I specialize in turning complex data challenges into growth opportunities. Currently available for full-time roles and consulting projects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="shadow-medium hover:shadow-large transition-all duration-300">
                   <Mail className="w-5 h-5 mr-2" />
-                  Schedule a Call
+                  Email Me
                 </Button>
                 <Button variant="outline" size="lg" className="shadow-soft hover:shadow-medium transition-all duration-300">
-                  View Portfolio
+                  Download Resume
                 </Button>
               </div>
             </div>

@@ -34,7 +34,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="text-xl font-semibold text-gradient">
-            Advaita Thalye
+            Advait Athalye
           </a>
 
           {/* Desktop Navigation */}
