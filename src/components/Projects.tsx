@@ -13,11 +13,11 @@ const Projects = () => {
   const projects = [
     {
       title: 'Marketing Incrementality Analysis & Budget Optimization',
-      description: 'Conducted data analysis on 19,656 marketing touchpoints to reveal 52–61% attribution bias, enabling $33.6M budget optimization through statistical modeling.',
+      description: 'Conducted data analysis on 19,656 marketing touchpoints to reveal 52–61% attribution bias through statistical modeling and causal inference.',
       image: customerSegmentation,
       technologies: ['Python', 'Statistical Analysis', 'Geo-Lift Testing', 'A/B Testing', 'Causal Inference'],
       metrics: [
-        { label: 'Budget Impact', value: '$33.6M', icon: DollarSign },
+        { label: 'Marketing Touchpoints', value: '19,656', icon: DollarSign },
         { label: 'Attribution Bias', value: '52-61%', icon: TrendingUp },
         { label: 'Email vs TV ROI', value: '1.71x vs 0.21x', icon: BarChart3 }
       ],
@@ -25,10 +25,10 @@ const Projects = () => {
         'Analyzed 19,656 marketing touchpoints with advanced statistical modeling',
         'Implemented A/B testing and Geo-Lift experimental design',
         'Developed Multi-Touch Attribution models revealing Email ROI 1.71x vs TV ROI 0.21x',
-        'Automated budget reallocation algorithm recommending $13.5M channel optimization'
+        'Automated budget reallocation algorithm using Python for channel optimization'
       ],
-      githubUrl: 'https://github.com/advaitathalye',
-      liveUrl: '#',
+      github: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis',
+      demo: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis',
       category: 'Marketing Analytics'
     },
     {
@@ -47,8 +47,8 @@ const Projects = () => {
         'Improved data accessibility and credit-risk evaluation speed',
         'Created interactive dashboards with real-time loan approval trends'
       ],
-      githubUrl: 'https://github.com/advaitathalye',
-      liveUrl: '#',
+      github: 'https://github.com/advaitathalye/LendingClub-BI-Dashboard',
+      demo: 'https://github.com/advaitathalye/LendingClub-BI-Dashboard',
       category: 'Business Intelligence'
     },
     {
@@ -67,8 +67,8 @@ const Projects = () => {
         'Enhanced dashboard usability based on feedback from 20+ job seekers',
         'Revealed recruiter hotspots and optimal application timing strategies'
       ],
-      githubUrl: 'https://github.com/advaitathalye',
-      liveUrl: '#',
+      github: 'https://github.com/advaitathalye/Company-Hiring-Trends-2025',
+      demo: 'https://github.com/advaitathalye/Company-Hiring-Trends-2025',
       category: 'Business Intelligence'
     },
     {
@@ -87,8 +87,8 @@ const Projects = () => {
         'Created interactive dashboard with seat class and review category filters',
         'Enabled targeted service improvements through data-driven insights'
       ],
-      githubUrl: 'https://github.com/advaitathalye',
-      liveUrl: 'https://public.tableau.com/views/your-dashboard',
+      github: 'https://public.tableau.com/views/CXTrendsAnalysis/Dashboard',
+      demo: 'https://public.tableau.com/views/CXTrendsAnalysis/Dashboard',
       category: 'Customer Analytics'
     }
   ];
@@ -195,14 +195,18 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3">
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button size="sm" className="flex-1">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Details
-                    </Button>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="sm" variant="outline" className="w-full">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </Button>
+                    </a>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="sm" className="w-full">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Details
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -211,10 +215,12 @@ const Projects = () => {
 
           {/* View All Projects Button */}
           <div className="text-center mt-12">
-            <Button size="lg" variant="outline" className="shadow-soft hover:shadow-medium transition-all duration-300">
-              View All Projects
-              <ExternalLink className="w-5 h-5 ml-2" />
-            </Button>
+            <a href="https://github.com/advaitathalye" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="shadow-soft hover:shadow-medium transition-all duration-300">
+                View All Projects
+                <ExternalLink className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

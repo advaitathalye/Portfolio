@@ -6,8 +6,8 @@ const About = () => {
   const highlights = [
     {
       icon: TrendingUp,
-      title: '$33.6M Impact',
-      description: 'Delivered marketing budget optimization revealing 52-61% attribution bias through statistical modeling'
+      title: '140+ hrs saved',
+      description: 'Monthly automation impact through ETL pipelines and dashboard optimization for Big 4 vendors'
     },
     {
       icon: Database,

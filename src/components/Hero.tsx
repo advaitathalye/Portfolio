@@ -42,16 +42,22 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="animate-fade-in-scale flex flex-col sm:flex-row gap-4 justify-center mb-16" style={{ animationDelay: '0.6s' }}>
-            <Button variant="hero" size="lg">
-              View Projects
-            </Button>
-            <Button variant="outline" size="lg">
-              Download Resume
-            </Button>
-            <Button variant="outline" size="lg">
-              <Mail className="w-5 h-5 mr-2" />
-              Let's Connect
-            </Button>
+            <a href="#projects">
+              <Button variant="hero" size="lg">
+                View Projects
+              </Button>
+            </a>
+            <a href="/resume.pdf" download>
+              <Button variant="outline" size="lg">
+                Download Resume
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button variant="outline" size="lg">
+                <Mail className="w-5 h-5 mr-2" />
+                Let's Connect
+              </Button>
+            </a>
           </div>
 
           {/* Social Links */}
