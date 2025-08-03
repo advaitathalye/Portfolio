@@ -84,7 +84,7 @@ const Footer = () => {
                 <a href="tel:+12169723772" className="hover:text-primary transition-smooth block">
                   216-972-3772
                 </a>
-                <p className="text-sm text-primary">Authorized to work in US - F1 OPT</p>
+                
               </div>
             </div>
           </div>

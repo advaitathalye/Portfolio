@@ -69,8 +69,8 @@ const Contact = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Let's Connect</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to discuss how data analytics can drive your business forward? I'm authorized to work in the US (F1 OPT) 
-              and open to opportunities in high-growth startups and data-driven companies.
+              Ready to discuss how data analytics can drive your business forward? I'm open to opportunities 
+              in high-growth startups and data-driven companies.
             </p>
           </div>
 

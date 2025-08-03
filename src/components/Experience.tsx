@@ -67,10 +67,7 @@ const Experience = () => {
   ];
 
   const certifications = [
-    'Google Data Analytics Professional Certificate (2025)',
-    'Power BI Data Analyst (In Progress)',
-    'Tableau Desktop Specialist (In Progress)',
-    'SQL for Data Science (Completed)'
+    'Google Data Analytics Professional Certificate (2025)'
   ];
 
   return (

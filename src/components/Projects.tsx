@@ -27,8 +27,8 @@ const Projects = () => {
         'Developed Multi-Touch Attribution models revealing Email ROI 1.71x vs TV ROI 0.21x',
         'Automated budget reallocation algorithm using Python for channel optimization'
       ],
-      github: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis',
-      demo: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis',
+      github: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis-Budget-Optimization',
+      demo: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis-Budget-Optimization',
       category: 'Marketing Analytics'
     },
     {
@@ -67,8 +67,8 @@ const Projects = () => {
         'Enhanced dashboard usability based on feedback from 20+ job seekers',
         'Revealed recruiter hotspots and optimal application timing strategies'
       ],
-      github: 'https://github.com/advaitathalye/Company-Hiring-Trends-2025',
-      demo: 'https://github.com/advaitathalye/Company-Hiring-Trends-2025',
+      github: 'https://github.com/advaitathalye/Company-hiring-trends-2025',
+      demo: 'https://github.com/advaitathalye/Company-hiring-trends-2025',
       category: 'Business Intelligence'
     },
     {
@@ -87,8 +87,8 @@ const Projects = () => {
         'Created interactive dashboard with seat class and review category filters',
         'Enabled targeted service improvements through data-driven insights'
       ],
-      github: 'https://public.tableau.com/views/CXTrendsAnalysis/Dashboard',
-      demo: 'https://public.tableau.com/views/CXTrendsAnalysis/Dashboard',
+      github: 'https://github.com/advaitathalye/British-Airways-Data-Analysis-Dashboard',
+      demo: 'https://github.com/advaitathalye/British-Airways-Data-Analysis-Dashboard',
       category: 'Customer Analytics'
     }
   ];
