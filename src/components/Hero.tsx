@@ -47,11 +47,6 @@ const Hero = () => {
                 View Projects
               </Button>
             </a>
-            <a href="/resume.pdf" download>
-              <Button variant="outline" size="lg">
-                Download Resume
-              </Button>
-            </a>
             <a href="#contact">
               <Button variant="outline" size="lg">
                 <Mail className="w-5 h-5 mr-2" />

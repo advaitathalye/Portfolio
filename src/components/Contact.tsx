@@ -122,20 +122,6 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              {/* Resume Download */}
-              <Card className="gradient-card shadow-soft">
-                <CardContent className="p-6">
-                  <div className="text-center">
-                    <h3 className="text-lg font-semibold mb-4">Download My Resume</h3>
-                    <a href="/resume.pdf" download>
-                      <Button className="w-full shadow-medium hover:shadow-large transition-all duration-300">
-                        <Download className="w-5 h-5 mr-2" />
-                        Download PDF Resume
-                      </Button>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
             {/* Contact Form */}
@@ -237,16 +223,11 @@ const Contact = () => {
                 Whether you need marketing attribution analysis, BI dashboard automation, or statistical modeling for business optimization, 
                 I specialize in turning complex data challenges into growth opportunities. Currently available for full-time roles and consulting projects.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex justify-center">
                 <a href="mailto:advaiitathalye@gmail.com">
                   <Button size="lg" className="shadow-medium hover:shadow-large transition-all duration-300">
                     <Mail className="w-5 h-5 mr-2" />
                     Email Me
-                  </Button>
-                </a>
-                <a href="/resume.pdf" download>
-                  <Button variant="outline" size="lg" className="shadow-soft hover:shadow-medium transition-all duration-300">
-                    Download Resume
                   </Button>
                 </a>
               </div>
