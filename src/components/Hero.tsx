@@ -27,11 +27,8 @@ const Hero = () => {
 
           {/* Title */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-foreground/90">
-              Data Analyst | Turning Analytics into
-            </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-gradient">
-              $33.6M+ Business Impact
+            <h2 className="text-xl md:text-2xl font-semibold mb-8 text-foreground/90 leading-relaxed">
+              Saved 140+ hrs/month through automation | Built dashboards for Big 4 vendors | Data Analyst specializing in Business Intelligence & Marketing Analytics | Master's grad May '25
             </h2>
           </div>
 

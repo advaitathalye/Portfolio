@@ -67,19 +67,33 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  My analytics journey began during my Computer Science studies in India, where I discovered the 
-                  power of data to solve real business problems. This passion led me to pursue an MIS Master's 
-                  at Cleveland State University, focusing on business intelligence and statistical analysis.
+                  I'm obsessed with turning data chaos into decisions that actually matter.
                 </p>
                 <p>
-                  Over the past 3+ years, I've helped companies from Big 4 consulting to tech startups optimize 
-                  their operations through data. From automating ETL pipelines that save 30+ hours weekly to 
-                  revealing $33.6M in marketing inefficiencies, I've consistently delivered measurable business impact.
+                  My analytics journey started during Computer Science in India, where I had that lightbulb moment: data isn't just numbers, it's the secret sauce behind every smart business move. That realization drove me to Cleveland State for my MIS Master's, diving deep into the art of making data work for people, not against them.
                 </p>
                 <p>
-                  What excites me most is making data accessible to everyone. Whether it's cutting loan portfolio 
-                  reviews from 3 hours to 10 minutes or helping executives make faster hiring decisions, I believe 
-                  great analytics should simplify complexity, not add to it.
+                  Here's what 3+ years in the trenches taught me: Most companies are drowning in data but starving for insights. I try to fix that gap.
+                </p>
+                <p>
+                  I've worked everywhere from HR firms (where I learned to handle enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter).
+                </p>
+                <p className="font-medium text-foreground/80">
+                  The wins that keep me up at night (in a good way):
+                </p>
+                <ul className="space-y-2 ml-4">
+                  <li>• Saved 140+ hours/month automating recruiter KPIs because nobody should live in Excel hell</li>
+                  <li>• Boosted enrollment conversion 34% → 38% with dashboards that admissions teams actually wanted to use</li>
+                  <li>• Eliminated 6-hour reporting lag that was killing operational speed</li>
+                </ul>
+                <p>
+                  My philosophy is simple: Great analytics should feel like magic, not math homework. When executives stop asking "What does this mean?" and start asking "What do we do next?", that's when you know you've nailed it.
+                </p>
+                <p>
+                  <strong>What I actually love doing:</strong> Building dashboards people open every morning • Running A/B tests that settle arguments • Forecasting that doesn't require a crystal ball • Aligning KPIs so everyone stops measuring different things
+                </p>
+                <p>
+                  If you're tired of data that collects dust instead of driving decisions, let's build something that actually moves the needle.
                 </p>
               </div>
             </div>

@@ -178,12 +178,12 @@ const Skills = () => {
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">$33.6M</div>
-              <div className="text-sm text-muted-foreground">Business Impact</div>
+              <div className="text-3xl font-bold text-primary mb-2">140+</div>
+              <div className="text-sm text-muted-foreground">Hours Saved Monthly</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">30+</div>
-              <div className="text-sm text-muted-foreground">Hours Saved Weekly</div>
+              <div className="text-3xl font-bold text-primary mb-2">Big 4</div>
+              <div className="text-sm text-muted-foreground">Vendor Dashboards</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">10+</div>
