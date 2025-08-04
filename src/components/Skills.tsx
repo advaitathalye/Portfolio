@@ -172,7 +172,7 @@ const Skills = () => {
           </Card>
 
           {/* Skills Summary Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">3+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
@@ -184,10 +184,6 @@ const Skills = () => {
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">Big 4</div>
               <div className="text-sm text-muted-foreground">Vendor Dashboards</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">10+</div>
-              <div className="text-sm text-muted-foreground">Tools Mastered</div>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Profile Photo - Left Side */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
               <div className="animate-fade-in relative">
@@ -39,21 +39,21 @@ const Hero = () => {
               {/* Greeting */}
               <div className="animate-fade-in">
                 <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6">
                   <span className="text-gradient">Advait Athalye</span>
                 </h1>
               </div>
 
               {/* Title */}
               <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <h2 className="text-lg md:text-xl font-semibold mb-6 text-foreground/90 leading-relaxed">
+                <h2 className="text-xl md:text-2xl font-semibold mb-6 text-foreground/90 leading-relaxed">
                   Saved 140+ hrs/month through automation | Built dashboards for Big 4 vendors | Data Analyst specializing in Business Intelligence & Marketing Analytics | Master's grad May '25
                 </h2>
               </div>
 
               {/* Description */}
               <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
                   Recent MIS Master's grad with 3+ years experience in BI dashboards, marketing analytics, and statistical modeling. 
                   I love taking messy, complex datasets and turning them into insights that actually make sense to people.
                 </p>
