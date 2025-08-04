@@ -3,9 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, TrendingUp, Users, DollarSign, BarChart3 } from 'lucide-react';
-import customerSegmentation from '@/assets/customer-segmentation.jpg';
-import salesForecasting from '@/assets/sales-forecasting.jpg';
-import supplyChain from '@/assets/supply-chain.jpg';
+import marketingIncrementalityChart from '@/assets/marketing-incrementality-chart.png';
+import companyHiringDashboard from '@/assets/company-hiring-dashboard.png';
+import britishAirwaysDashboard from '@/assets/british-airways-dashboard.png';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: 'Marketing Incrementality Analysis & Budget Optimization',
       description: 'Conducted data analysis on 19,656 marketing touchpoints to reveal 52–61% attribution bias through statistical modeling and causal inference.',
-      image: customerSegmentation,
+      image: marketingIncrementalityChart,
       technologies: ['Python', 'Statistical Analysis', 'Geo-Lift Testing', 'A/B Testing', 'Causal Inference'],
       metrics: [
         { label: 'Marketing Touchpoints', value: '19,656', icon: DollarSign },
@@ -34,7 +34,7 @@ const Projects = () => {
     {
       title: 'LendingClub BI Dashboard',
       description: 'Cut loan portfolio review time from 3 hours to under 10 mins by automating interactive dashboards, supporting faster credit-risk evaluation scenarios.',
-      image: salesForecasting,
+      image: companyHiringDashboard,
       technologies: ['n8n', 'Supabase', 'Chart.js', 'API Integration', 'SQL'],
       metrics: [
         { label: 'Time Saved', value: '3hrs → 10min', icon: TrendingUp },
@@ -54,7 +54,7 @@ const Projects = () => {
     {
       title: 'Company Hiring Trends 2025 Dashboard',
       description: 'Developed a BI dashboard from 1000+ LinkedIn job posts to reveal hiring spikes, recruiter hotspots, and geographic demand patterns.',
-      image: supplyChain,
+      image: companyHiringDashboard,
       technologies: ['Power BI', 'DAX', 'SQL', 'Excel', 'Data Mining'],
       metrics: [
         { label: 'Job Posts Analyzed', value: '1000+', icon: BarChart3 },
@@ -74,7 +74,7 @@ const Projects = () => {
     {
       title: 'CX Trends Analysis - Airline Reviews',
       description: 'Designed Tableau dashboard visualizing 20K+ airline reviews, revealing 5 route-cabin combos with 15–25% NPS decline, enabling targeted service improvements.',
-      image: customerSegmentation,
+      image: britishAirwaysDashboard,
       technologies: ['Tableau', 'Excel', 'Data Cleaning', 'NPS Analysis'],
       metrics: [
         { label: 'Reviews Analyzed', value: '20K+', icon: BarChart3 },
