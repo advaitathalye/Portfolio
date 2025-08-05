@@ -1,55 +1,47 @@
-import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { Code2, Database, BarChart3, Brain, Cloud, Users } from 'lucide-react';
 
 const Skills = () => {
-  const [animatedValues, setAnimatedValues] = useState<Record<string, number>>({});
-
   const skillCategories = [
     {
       title: 'Visualization & BI',
       icon: BarChart3,
-      color: 'data-blue',
       skills: [
-        { name: 'Power BI (DAX, M Query)', level: 92, description: 'Advanced dashboards, automation' },
-        { name: 'Tableau', level: 88, description: 'Interactive visualizations, storytelling' },
-        { name: 'Looker', level: 75, description: 'Business intelligence, SQL modeling' },
-        { name: 'Excel (Advanced)', level: 90, description: 'Complex formulas, pivot tables, VBA' }
+        { name: 'Power BI (DAX, M Query)', description: 'Advanced dashboards, automation' },
+        { name: 'Tableau', description: 'Interactive visualizations, storytelling' },
+        { name: 'Looker', description: 'Business intelligence, SQL modeling' },
+        { name: 'Excel (Advanced)', description: 'Complex formulas, pivot tables, VBA' }
       ]
     },
     {
       title: 'Programming & Analytics',
       icon: Code2,
-      color: 'data-purple',
       skills: [
-        { name: 'Python (Pandas, NumPy)', level: 88, description: 'Data analysis, statistical modeling' },
-        { name: 'SQL (PostgreSQL, MySQL)', level: 90, description: 'Complex queries, database design' },
-        { name: 'R', level: 82, description: 'Statistical analysis, data mining' },
-        { name: 'BigQuery', level: 78, description: 'Cloud data warehousing' }
+        { name: 'Python (Pandas, NumPy)', description: 'Data analysis, statistical modeling' },
+        { name: 'SQL (PostgreSQL, MySQL)', description: 'Complex queries, database design' },
+        { name: 'R', description: 'Statistical analysis, data mining' },
+        { name: 'BigQuery', description: 'Cloud data warehousing' }
       ]
     },
     {
       title: 'Marketing & Statistical Analysis',
       icon: Brain,
-      color: 'data-green',
       skills: [
-        { name: 'A/B Testing', level: 90, description: 'Experimental design, hypothesis testing' },
-        { name: 'Marketing Attribution', level: 85, description: 'Multi-touch, incrementality measurement' },
-        { name: 'Geo-Lift Testing', level: 88, description: 'Causal inference, regional analysis' },
-        { name: 'Statistical Modeling', level: 87, description: 'Regression, forecasting, MMM' }
+        { name: 'A/B Testing', description: 'Experimental design, hypothesis testing' },
+        { name: 'Marketing Attribution', description: 'Multi-touch, incrementality measurement' },
+        { name: 'Geo-Lift Testing', description: 'Causal inference, regional analysis' },
+        { name: 'Statistical Modeling', description: 'Regression, forecasting, MMM' }
       ]
     },
     {
       title: 'Data Engineering & Tools',
       icon: Database,
-      color: 'data-orange',
       skills: [
-        { name: 'dbt', level: 80, description: 'Data transformation, modeling' },
-        { name: 'ETL Workflows', level: 88, description: 'Pipeline automation, optimization' },
-        { name: 'API Integration', level: 82, description: 'n8n, data connectors' },
-        { name: 'Data Validation', level: 85, description: 'Quality assurance, monitoring' }
+        { name: 'dbt', description: 'Data transformation, modeling' },
+        { name: 'ETL Workflows', description: 'Pipeline automation, optimization' },
+        { name: 'API Integration', description: 'n8n, data connectors' },
+        { name: 'Data Validation', description: 'Quality assurance, monitoring' }
       ]
     }
   ];
@@ -67,21 +59,6 @@ const Skills = () => {
     { skill: 'Process Automation', description: 'Workflow optimization, reducing manual effort through technology' },
     { skill: 'Cross-functional Collaboration', description: 'Working with technical teams, executives, and stakeholders' }
   ];
-
-  useEffect(() => {
-    // Animate progress bars on component mount
-    const timer = setTimeout(() => {
-      const values: Record<string, number> = {};
-      skillCategories.forEach(category => {
-        category.skills.forEach(skill => {
-          values[skill.name] = skill.level;
-        });
-      });
-      setAnimatedValues(values);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <section id="skills" className="py-20">
@@ -101,25 +78,18 @@ const Skills = () => {
               <Card key={index} className="gradient-card shadow-soft hover:shadow-medium transition-all duration-300 group">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center text-xl">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center mr-3 bg-${category.color}/20`}>
-                      <category.icon className={`w-5 h-5 text-${category.color}`} />
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 bg-primary/20">
+                      <category.icon className="w-5 h-5 text-primary" />
                     </div>
                     {category.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-6">
+                  <div className="space-y-4">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex}>
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="font-medium">{skill.name}</span>
-                          <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                        </div>
-                        <Progress 
-                          value={animatedValues[skill.name] || 0} 
-                          className="h-2 mb-1"
-                        />
-                        <p className="text-xs text-muted-foreground">{skill.description}</p>
+                      <div key={skillIndex} className="border-l-2 border-primary/20 pl-4">
+                        <h4 className="font-medium mb-1">{skill.name}</h4>
+                        <p className="text-sm text-muted-foreground">{skill.description}</p>
                       </div>
                     ))}
                   </div>
@@ -151,7 +121,7 @@ const Skills = () => {
             </CardContent>
           </Card>
 
-          {/* Soft Skills */}
+          {/* Professional Skills */}
           <Card className="gradient-card shadow-soft">
             <CardHeader>
               <CardTitle className="flex items-center text-xl">
@@ -170,22 +140,6 @@ const Skills = () => {
               </div>
             </CardContent>
           </Card>
-
-          {/* Skills Summary Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">3+</div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">140+</div>
-              <div className="text-sm text-muted-foreground">Hours Saved Monthly</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">Big 4</div>
-              <div className="text-sm text-muted-foreground">Vendor Dashboards</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
