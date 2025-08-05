@@ -135,7 +135,7 @@ export default {
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
+				sans: ['Avenir', 'Avenir Next', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
 				mono: ['JetBrains Mono', 'Fira Code', 'monospace']
 			}
 		}
