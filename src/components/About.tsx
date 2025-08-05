@@ -82,7 +82,7 @@ const About = () => {
                 <p className="font-medium text-foreground/80">
                   The wins that keep me up at night (in a good way):
                 </p>
-                <ul className="space-y-3 ml-4">
+                <ul className="space-y-2 ml-4">
                   <li>• Saved 140+ hours/month automating recruiter KPIs because nobody should live in Excel hell</li>
                   <li>• Boosted enrollment conversion 34% → 38% with dashboards that admissions teams actually wanted to use</li>
                   <li>• Eliminated 6-hour reporting lag that was killing operational speed</li>
@@ -101,20 +101,21 @@ const About = () => {
 
             <div>
               <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div className="flex flex-wrap gap-2">
                 {technologies.map((tech, index) => (
-                  <div 
+                  <Badge 
                     key={index} 
-                    className="p-3 rounded-lg border border-border/20 hover:border-primary/30 hover:bg-primary/5 transition-smooth text-center"
+                    variant="outline" 
+                    className="px-3 py-1 hover:bg-primary/10 hover:border-primary/30 transition-smooth"
                   >
-                    <span className="font-medium text-foreground text-sm">{tech}</span>
-                  </div>
+                    {tech}
+                  </Badge>
                 ))}
               </div>
 
               <div className="mt-8">
                 <h4 className="text-lg font-semibold mb-4">Current Focus</h4>
-                <ul className="space-y-3 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
                     Advanced marketing attribution and incrementality measurement
