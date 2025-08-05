@@ -127,14 +127,14 @@ const Experience = () => {
                         </div>
                       </div>
 
-                      {/* Description */}
-                      <p className="text-muted-foreground mb-4 leading-relaxed">
-                        {exp.description}
-                      </p>
-
                       {/* Company Description */}
                       <p className="text-muted-foreground/80 mb-4 text-sm italic leading-relaxed">
                         {exp.companyDescription}
+                      </p>
+
+                      {/* Description */}
+                      <p className="text-muted-foreground mb-4 leading-relaxed">
+                        {exp.description}
                       </p>
 
                       {/* Achievements */}
