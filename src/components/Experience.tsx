@@ -11,6 +11,7 @@ const Experience = () => {
       location: 'India',
       type: 'Full-time',
       description: 'Led analytics initiatives for Big 4 consulting vendors, focusing on recruitment funnel optimization and automated BI dashboard development.',
+      companyDescription: 'A leading staffing and workforce solutions firm delivering top talent to Fortune 500 clients across IT, engineering, and professional services.',
       achievements: [
         'Automated ETL pipelines & Power BI dashboards saving 30 hrs/week and enabling same-day hiring decisions',
         'Analyzed 3 recruitment funnels to pinpoint 35% candidate drop-off, reducing time-to-fill from 45 to 31 days',
@@ -26,6 +27,7 @@ const Experience = () => {
       location: 'India',
       type: 'Full-time',
       description: 'Focused on real-time SLA monitoring and operations optimization through advanced Tableau dashboards and workflow automation.',
+      companyDescription: 'An IT services startup specializing in managed infrastructure, data analytics, and customized business solutions for global clients.',
       achievements: [
         'Delivered real-time SLA dashboards in Tableau, removing 6-hour reporting lag for 50 client accounts',
         'Cut Tier-1 false alarms by 25% by investigating root causes and refining alert thresholds',
@@ -41,6 +43,7 @@ const Experience = () => {
       location: 'India',
       type: 'Internship',
       description: 'Automated admissions reporting and built strategic dashboards for university leadership, focusing on enrollment optimization.',
+      companyDescription: 'One of India\'s premier technical universities, fostering innovation through engineering education and applied research.',
       achievements: [
         'Saved 20 hrs/week by automating ad-hoc and recurring admissions reports using Python and SQL',
         'Created Power BI segmentation dashboards increasing admitted-to-enrolled conversion from 34% to 38%',
@@ -127,6 +130,11 @@ const Experience = () => {
                       {/* Description */}
                       <p className="text-muted-foreground mb-4 leading-relaxed">
                         {exp.description}
+                      </p>
+
+                      {/* Company Description */}
+                      <p className="text-muted-foreground/80 mb-4 text-sm italic leading-relaxed">
+                        {exp.companyDescription}
                       </p>
 
                       {/* Achievements */}
