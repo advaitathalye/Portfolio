@@ -1,46 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import { Player } from '@lottiefiles/react-lottie-player';
-import { useState, useEffect } from 'react';
 import heroBackground from '@/assets/hero-background.jpg';
 import profilePhoto from '/lovable-uploads/9e2b1fbd-2eb2-428e-8c5a-28617ae454ff.png';
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [lottieData, setLottieData] = useState(null);
-
-  useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 1024);
-    };
-    
-    checkIsMobile();
-    window.addEventListener('resize', checkIsMobile);
-    
-    // Load Lottie animation data
-    fetch('/loop-header.lottie')
-      .then(response => response.json())
-      .then(data => setLottieData(data))
-      .catch(() => {}); // Silently fail if animation doesn't exist
-    
-    return () => window.removeEventListener('resize', checkIsMobile);
-  }, []);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (isMobile) return;
-    
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = (e.clientX - rect.left - rect.width / 2) / rect.width;
-    const y = (e.clientY - rect.top - rect.height / 2) / rect.height;
-    
-    setMousePosition({ x: x * 2.5, y: y * 2.5 });
-  };
-
-  const handleMouseLeave = () => {
-    setMousePosition({ x: 0, y: 0 });
-  };
-
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
@@ -57,39 +20,14 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-8">
             {/* Profile Photo - Left Side */}
-            <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:w-1/2">
-              <div 
-                className="animate-fade-in relative max-w-lg mx-auto w-full"
-                style={{ animationDelay: '0.9s' }}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-              >
-                <div 
-                  className={`
-                    w-full h-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl
-                    transition-all duration-500 ease-out
-                    ${!isMobile ? 'hover:scale-[1.02] cursor-pointer' : ''}
-                  `}
-                  style={{
-                    transform: !isMobile 
-                      ? `perspective(1000px) rotateY(${mousePosition.x}deg) rotateX(${-mousePosition.y}deg) scale3d(1.02, 1.02, 1.02)`
-                      : 'none'
-                  }}
-                >
-                  {lottieData ? (
-                    <Player
-                      autoplay
-                      loop
-                      src="/loop-header.lottie"
-                      className="w-full h-auto"
-                    />
-                  ) : (
-                    <img 
-                      src={profilePhoto} 
-                      alt="Advait Athalye - Data Analyst" 
-                      className="w-full h-auto object-cover"
-                    />
-                  )}
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:flex-shrink-0">
+              <div className="animate-fade-in relative">
+                <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-large">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Advait Athalye - Data Analyst" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-2xl animate-glow" />
                 <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-accent/20 rounded-full blur-xl animate-float" />
