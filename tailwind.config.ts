@@ -88,14 +88,6 @@ export default {
 					'0%': { opacity: '0', transform: 'translateY(20px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
-				'fade-in-up': {
-					'0%': { opacity: '0', transform: 'translateY(30px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' }
-				},
-				'fade-in-down': {
-					'0%': { opacity: '0', transform: 'translateY(-30px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' }
-				},
 				'fade-in-scale': {
 					'0%': { opacity: '0', transform: 'scale(0.95) translateY(20px)' },
 					'100%': { opacity: '1', transform: 'scale(1) translateY(0)' }
@@ -103,10 +95,6 @@ export default {
 				'slide-up': {
 					'0%': { transform: 'translateY(100%)' },
 					'100%': { transform: 'translateY(0)' }
-				},
-				'text-reveal': {
-					'0%': { opacity: '0', transform: 'translateY(100%)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'glow': {
 					'0%, 100%': { opacity: '1' },
@@ -124,23 +112,16 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-				'fade-in-up': 'fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-				'fade-in-down': 'fade-in-down 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-				'fade-in-scale': 'fade-in-scale 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-				'slide-up': 'slide-up 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-				'text-reveal': 'text-reveal 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'fade-in-scale': 'fade-in-scale 0.6s ease-out',
+				'slide-up': 'slide-up 0.6s ease-out',
 				'glow': 'glow 2s ease-in-out infinite',
 				'float': 'float 3s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
-				serif: ['Georgia', 'serif'],
 				mono: ['JetBrains Mono', 'Fira Code', 'monospace']
-			},
-			letterSpacing: {
-				tighter: '-0.02em',
 			}
 		}
 	},
