@@ -4,7 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import heroBackground from '@/assets/hero-background.jpg';
-import profilePhoto from '/lovable-uploads/d32400e2-fd46-45eb-a8a8-d98400fd4426.png';
+import profilePhoto from '/lovable-uploads/9e2b1fbd-2eb2-428e-8c5a-28617ae454ff.png';
 import FadeIn from './FadeIn';
 
 const Hero = () => {
