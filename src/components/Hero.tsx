@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
@@ -115,7 +116,9 @@ const Hero = () => {
               {/* Title */}
               <FadeIn delay={0.2} className="stagger-1">
                 <h2 className="text-xl md:text-2xl font-semibold mb-6 text-foreground/90 leading-relaxed">
-                  Saved 140+ hrs/month through automation | Built dashboards for Big 4 vendors | Data Analyst specializing in Business Intelligence & Marketing Analytics | Master's grad May&nbsp;'25
+                  Saved 140+ hrs/month through automation | Built dashboards for Big 4 vendors | Data Analyst specializing in Business Intelligence & Marketing Analytics
+                  <br />
+                  Master's grad May&nbsp;'25
                 </h2>
               </FadeIn>
 
