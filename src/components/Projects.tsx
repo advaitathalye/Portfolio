@@ -193,17 +193,11 @@ const Projects = () => {
                     </ul>
                   </div>
 
-                  {/* Action Buttons */}
-                  <div className="flex gap-3">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button size="sm" variant="outline" className="w-full">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Button>
-                    </a>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1">
+                  {/* Action Button */}
+                  <div className="flex justify-center">
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-full">
                       <Button size="sm" className="w-full">
-                        <ExternalLink className="w-4 h-4 mr-2" />
+                        <Github className="w-4 h-4 mr-2" />
                         View Details
                       </Button>
                     </a>
