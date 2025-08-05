@@ -6,11 +6,13 @@ import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import SectionNavigation from '@/components/SectionNavigation';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <SectionNavigation />
       <main>
         <Hero />
         <About />

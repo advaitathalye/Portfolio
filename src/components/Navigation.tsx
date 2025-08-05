@@ -5,12 +5,27 @@ import { Download, Menu, X } from 'lucide-react';
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      
+      // Check which section is currently in view
+      const sections = ['hero', 'about', 'projects', 'experience', 'skills', 'contact'];
+      const scrollPosition = window.scrollY + 100;
+      
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const element = document.getElementById(sections[i]);
+        if (element && element.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
     };
+    
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial position
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -21,6 +36,11 @@ const Navigation = () => {
     { label: 'Skills', href: '#skills' },
     { label: 'Contact', href: '#contact' },
   ];
+
+  const isActive = (href: string) => {
+    const section = href.replace('#', '');
+    return activeSection === section;
+  };
 
   return (
     <nav
@@ -43,10 +63,16 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-smooth relative group"
+                className={`transition-smooth relative group ${
+                  isActive(item.href) 
+                    ? 'text-primary font-medium' 
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 gradient-primary group-hover:w-full transition-all duration-300" />
+                <span className={`absolute bottom-0 left-0 h-0.5 gradient-primary transition-all duration-300 ${
+                  isActive(item.href) ? 'w-full' : 'w-0 group-hover:w-full'
+                }`} />
               </a>
             ))}
             <a href="/Advait_Athalye_Resume.pdf" download="Advait_Athalye_Resume.pdf">
@@ -80,7 +106,11 @@ const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-muted-foreground hover:text-foreground transition-smooth"
+                  className={`transition-smooth ${
+                    isActive(item.href) 
+                      ? 'text-primary font-medium' 
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

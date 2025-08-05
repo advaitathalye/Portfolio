@@ -47,8 +47,9 @@ const Skills = () => {
   ];
 
   const tools = [
-    'Power BI', 'Tableau', 'Python', 'SQL', 'R', 'Excel', 'dbt', 'n8n',
-    'BigQuery', 'PostgreSQL', 'Chart.js', 'Supabase', 'Git', 'Jupyter'
+    'Power BI', 'Python', 'SQL', 'Tableau', 'R', 'DAX', 'M Query', 'Pandas',
+    'NumPy', 'Matplotlib', 'PostgreSQL', 'BigQuery', 'dbt', 'A/B Testing',
+    'Statistical Modeling', 'ETL Workflows', 'API Integration'
   ];
 
   const softSkills = [
@@ -98,24 +99,23 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Tools & Technologies */}
+          {/* Technical Skills */}
           <Card className="gradient-card shadow-soft mb-16">
             <CardHeader>
               <CardTitle className="flex items-center text-xl">
                 <Cloud className="w-6 h-6 mr-3 text-primary" />
-                Tools & Technologies
+                Technical Skills
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {tools.map((tool, index) => (
-                  <Badge 
+                  <div 
                     key={index} 
-                    variant="outline" 
-                    className="px-3 py-2 hover:bg-primary/10 hover:border-primary/30 transition-smooth cursor-default"
+                    className="p-3 rounded-lg border border-border/20 hover:border-primary/30 hover:bg-primary/5 transition-smooth text-center"
                   >
-                    {tool}
-                  </Badge>
+                    <span className="font-medium text-foreground">{tool}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>
