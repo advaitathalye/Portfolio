@@ -1,9 +1,48 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Player } from '@lottiefiles/react-lottie-player';
+import { useState, useEffect, useRef } from 'react';
 import heroBackground from '@/assets/hero-background.jpg';
 import profilePhoto from '/lovable-uploads/9e2b1fbd-2eb2-428e-8c5a-28617ae454ff.png';
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [lottieData, setLottieData] = useState(null);
+  const photoRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    // Load Lottie animation
+    fetch('/loop-header.lottie')
+      .then(res => res.json())
+      .then(data => setLottieData(data))
+      .catch(() => {}); // Fail silently if no Lottie file
+  }, []);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isMobile || !photoRef.current) return;
+    
+    const rect = photoRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    
+    const rotateX = (y / rect.height) * -2.5;
+    const rotateY = (x / rect.width) * 2.5;
+    
+    photoRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  };
+
+  const handleMouseLeave = () => {
+    if (isMobile || !photoRef.current) return;
+    photoRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+  };
+
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
@@ -20,14 +59,28 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-8">
             {/* Profile Photo - Left Side */}
-            <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:flex-shrink-0">
-              <div className="animate-fade-in relative">
-                <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-large">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Advait Athalye - Data Analyst" 
-                    className="w-full h-full object-cover"
-                  />
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:w-1/2">
+              <div className="animate-fade-in relative max-w-lg mx-auto w-full" style={{ animationDelay: '0.9s' }}>
+                <div 
+                  ref={photoRef}
+                  className="w-full h-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 ease-out"
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {lottieData ? (
+                    <Player
+                      autoplay
+                      loop
+                      src="/loop-header.lottie"
+                      className="w-full h-auto"
+                    />
+                  ) : (
+                    <img 
+                      src={profilePhoto} 
+                      alt="Advait Athalye - Data Analyst" 
+                      className="w-full h-auto object-cover"
+                    />
+                  )}
                 </div>
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-2xl animate-glow" />
                 <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-accent/20 rounded-full blur-xl animate-float" />
@@ -35,24 +88,24 @@ const Hero = () => {
             </div>
 
             {/* Content - Right Side */}
-            <div className="text-center lg:text-left order-1 lg:order-2">
+            <div className="text-center lg:text-left order-1 lg:order-2 lg:w-1/2">
               {/* Greeting */}
-              <div className="animate-fade-in">
+              <div className="animate-fade-in-down stagger-1">
                 <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
-                <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tighter">
                   <span className="text-gradient">Advait Athalye</span>
                 </h1>
               </div>
 
               {/* Title */}
-              <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <h2 className="text-xl md:text-2xl font-semibold mb-6 text-foreground/90 leading-relaxed">
+              <div className="animate-fade-in-up stagger-2">
+                <h2 className="text-xl md:text-2xl font-semibold mb-6 text-foreground/90 leading-relaxed font-serif tracking-tighter">
                   Saved 140+ hrs/month through automation | Built dashboards for Big 4 vendors | Data Analyst specializing in Business Intelligence & Marketing Analytics | Master's grad May '25
                 </h2>
               </div>
 
               {/* Description */}
-              <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="animate-text-reveal stagger-3">
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
                   Recent MIS Master's grad with 3+ years experience in BI dashboards, marketing analytics, and statistical modeling. 
                   I love taking messy, complex datasets and turning them into insights that actually make sense to people.
