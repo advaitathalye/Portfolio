@@ -81,13 +81,6 @@ const Hero = () => {
                 <div 
                   ref={photoRef}
                   className={`w-full h-auto rounded-2xl ${isMobile ? 'sm:rounded-2xl' : 'sm:rounded-3xl'} overflow-hidden shadow-2xl transition-all duration-500 ease-out`}
-                  style={{
-                    backgroundImage: `url(${heroBackground})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundBlendMode: 'overlay',
-                    opacity: 0.5
-                  }}
                 >
                   {lottieData ? (
                     <Player
