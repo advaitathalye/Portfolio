@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4">
+          <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-6">
             {/* Profile Photo - Left Side */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:flex-shrink-0">
               <div className="animate-fade-in relative">
