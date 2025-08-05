@@ -15,9 +15,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 22% 11%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 221 83% 68%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 0 0% 20%;
     
     --secondary: 220 14% 96%;
     --secondary-foreground: 222 22% 11%;
@@ -42,8 +42,8 @@
     --data-orange: 25 95% 53%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05));
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 98%), hsl(220 14% 96%));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
     
     /* Shadows */
