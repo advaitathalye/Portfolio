@@ -47,9 +47,9 @@ const Skills = () => {
   ];
 
   const tools = [
-    'Power BI', 'Python', 'SQL', 'Tableau', 'R', 'DAX', 'M Query', 'Pandas',
-    'NumPy', 'Matplotlib', 'PostgreSQL', 'BigQuery', 'dbt', 'A/B Testing',
-    'Statistical Modeling', 'ETL Workflows', 'API Integration'
+    'Power BI', 'Python', 'SQL', 'Tableau', 'R', 'DAX', 'PostgreSQL', 
+    'BigQuery', 'dbt', 'A/B Testing', 'Statistical Modeling', 'ETL Workflows', 
+    'API Integration'
   ];
 
   const softSkills = [
