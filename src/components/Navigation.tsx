@@ -49,6 +49,12 @@ const Navigation = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 gradient-primary group-hover:w-full transition-all duration-300" />
               </a>
             ))}
+            <a href="/Advait_Athalye_Resume.pdf" download="Advait_Athalye_Resume.pdf">
+              <Button variant="outline" size="sm">
+                <Download className="w-4 h-4 mr-2" />
+                Resume
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,6 +86,12 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
+              <a href="/Advait_Athalye_Resume.pdf" download="Advait_Athalye_Resume.pdf" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="outline" size="sm" className="w-fit">
+                  <Download className="w-4 h-4 mr-2" />
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
         )}
