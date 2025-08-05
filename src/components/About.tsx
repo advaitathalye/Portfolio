@@ -67,16 +67,13 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm obsessed with turning data chaos into decisions that actually matter.
+                  I've worked everywhere from HR firms (where I learned to handle enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter). I'm obsessed with turning data chaos into decisions that actually matter.
                 </p>
                 <p>
                   My analytics journey started during Computer Science in India, where I had that lightbulb moment: data isn't just numbers, it's the secret sauce behind every smart business move. That realization drove me to Cleveland State for my MIS Master's, diving deep into the art of making data work for people, not against them.
                 </p>
                 <p>
                   Here's what 3+ years in the trenches taught me: Most companies are drowning in data but starving for insights. I try to fix that gap.
-                </p>
-                <p>
-                  I've worked everywhere from HR firms (where I learned to handle enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter).
                 </p>
                 <p className="font-medium text-foreground/80">
                   The wins that keep me up at night (in a good way):
