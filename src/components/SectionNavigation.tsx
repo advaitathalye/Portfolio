@@ -51,31 +51,25 @@ const SectionNavigation = () => {
   };
 
   return (
-    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-2">
+    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3">
       <Button
         variant="outline"
         size="icon"
-        className="w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm border-border/50 hover:bg-primary hover:text-primary-foreground shadow-medium"
+        className="w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm border-border/30 hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-medium transition-all duration-300"
         onClick={() => navigateToSection('up')}
         disabled={currentSection === 0}
       >
-        <ChevronUp className="w-5 h-5" />
+        <ChevronUp className="w-4 h-4" />
       </Button>
-      
-      <div className="w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 flex items-center justify-center">
-        <span className="text-xs font-medium text-muted-foreground">
-          {currentSection + 1}/{sections.length}
-        </span>
-      </div>
       
       <Button
         variant="outline"
         size="icon"
-        className="w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm border-border/50 hover:bg-primary hover:text-primary-foreground shadow-medium"
+        className="w-10 h-10 rounded-full bg-background/60 backdrop-blur-sm border-border/30 hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-medium transition-all duration-300"
         onClick={() => navigateToSection('down')}
         disabled={currentSection === sections.length - 1}
       >
-        <ChevronDown className="w-5 h-5" />
+        <ChevronDown className="w-4 h-4" />
       </Button>
     </div>
   );
