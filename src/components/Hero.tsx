@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import heroBackground from '@/assets/hero-background.jpg';
@@ -139,6 +139,12 @@ const Hero = () => {
                     <Button variant="outline" size="lg">
                       <Mail className="w-5 h-5 mr-2" />
                       Let's Connect
+                    </Button>
+                  </a>
+                  <a href="/Advait_Athalye_Resume.pdf" download="Advait_Athalye_Resume.pdf">
+                    <Button variant="secondary" size="lg">
+                      <Download className="w-5 h-5 mr-2" />
+                      Download Resume
                     </Button>
                   </a>
                 </div>
