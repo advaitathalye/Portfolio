@@ -18,9 +18,9 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-0 items-center">
+          <div className="flex flex-col lg:flex-row items-center gap-0 lg:-space-x-12">
             {/* Profile Photo - Left Side */}
-            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:flex-shrink-0">
               <div className="animate-fade-in relative">
                 <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-large">
                   <img 
@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
 
             {/* Content - Right Side */}
-            <div className="text-center lg:text-left order-1 lg:order-2">
+            <div className="text-center lg:text-left order-1 lg:order-2 lg:pl-8">
               {/* Greeting */}
               <div className="animate-fade-in">
                 <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
