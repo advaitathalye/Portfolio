@@ -96,7 +96,7 @@ const Footer = () => {
                 © {currentYear} Advait Athalye. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground flex items-center">
-                Built with <Heart className="w-4 h-4 mx-1 text-red-500" /> using React & TypeScript
+                Built with <Heart className="w-4 h-4 mx-1 text-red-500" />
               </p>
             </div>
           </div>
