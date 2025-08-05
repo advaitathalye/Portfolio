@@ -41,7 +41,8 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Recent MIS Master's graduate from Cleveland State University with 3+ years of hands-on experience 
-              transforming complex data into business-driving insights. I specialize in turning messy datasets 
+              transforming complex data into business-driving insights. From HR firms (handling enterprise-scale chaos) 
+              to cybersecurity startups (where every optimization can make or break the quarter) I specialize in turning messy datasets 
               into clear, actionable strategies that executives actually understand and implement.
             </p>
           </div>
