@@ -13,7 +13,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Marketing Incrementality Analysis & Budget Optimization',
-      description: 'Drove growth through data analysis on 19,656 marketing touchpoints, revealing 52–61% attribution bias and unlocking budget optimization opportunities.',
+      description: 'Conducted data analysis on 19,656 marketing touchpoints to reveal 52–61% attribution bias through statistical modeling and causal inference.',
       image: marketingIncrementalityChart,
       technologies: ['Python', 'Statistical Analysis', 'Geo-Lift Testing', 'A/B Testing', 'Causal Inference'],
       metrics: [
@@ -22,10 +22,10 @@ const Projects = () => {
         { label: 'Email vs TV ROI', value: '1.71x vs 0.21x', icon: BarChart3 }
       ],
       highlights: [
-        'Drove growth through data on 19,656 marketing touchpoints with advanced statistical modeling',
-        'Scaled operations with A/B testing and Geo-Lift experimental design',
-        'Built data infrastructure revealing Email ROI 1.71x vs TV ROI 0.21x',
-        'Scaled operations with automated budget reallocation algorithm using Python'
+        'Analyzed 19,656 marketing touchpoints with advanced statistical modeling',
+        'Implemented A/B testing and Geo-Lift experimental design',
+        'Developed Multi-Touch Attribution models revealing Email ROI 1.71x vs TV ROI 0.21x',
+        'Automated budget reallocation algorithm using Python for channel optimization'
       ],
       github: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis-Budget-Optimization',
       demo: 'https://github.com/advaitathalye/Marketing-Incrementality-Analysis-Budget-Optimization',
@@ -33,7 +33,7 @@ const Projects = () => {
     },
     {
       title: 'LendingClub BI Dashboard',
-      description: 'Scaled operations by cutting loan portfolio review time from 3 hours to under 10 mins, building data infrastructure for faster credit-risk evaluation.',
+      description: 'Cut loan portfolio review time from 3 hours to under 10 mins by automating interactive dashboards, supporting faster credit-risk evaluation scenarios.',
       image: companyHiringDashboard,
       technologies: ['n8n', 'Supabase', 'Chart.js', 'API Integration', 'SQL'],
       metrics: [
@@ -42,10 +42,10 @@ const Projects = () => {
         { label: 'Risk Analysis', value: 'Enhanced', icon: Users }
       ],
       highlights: [
-        'Scaled operations with n8n workflows eliminating manual chart generation',
-        'Built data infrastructure for loan segmentation highlighting high-risk categories',
-        'Scaled operations improving data accessibility and credit-risk evaluation speed',
-        'Built data infrastructure with interactive dashboards showing real-time loan approval trends'
+        'Automated queries with n8n workflows eliminating manual chart generation',
+        'Built loan segmentation visuals highlighting high-risk categories',
+        'Improved data accessibility and credit-risk evaluation speed',
+        'Created interactive dashboards with real-time loan approval trends'
       ],
       github: 'https://github.com/advaitathalye/LendingClub-BI-Dashboard',
       demo: 'https://github.com/advaitathalye/LendingClub-BI-Dashboard',
@@ -53,7 +53,7 @@ const Projects = () => {
     },
     {
       title: 'Company Hiring Trends 2025 Dashboard',
-      description: 'Built data infrastructure from 1000+ LinkedIn job posts to unlock hiring spikes, recruiter hotspots, and geographic demand patterns.',
+      description: 'Developed a BI dashboard from 1000+ LinkedIn job posts to reveal hiring spikes, recruiter hotspots, and geographic demand patterns.',
       image: companyHiringDashboard,
       technologies: ['Power BI', 'DAX', 'SQL', 'Excel', 'Data Mining'],
       metrics: [
@@ -62,10 +62,10 @@ const Projects = () => {
         { label: 'Users Helped', value: '20+', icon: Users }
       ],
       highlights: [
-        'Scaled operations with filters and KPI cards reducing manual job search effort by 3+ hours/week',
-        'Drove growth through data revealing hiring velocity patterns and geographic demand trends',
-        'Scaled operations improving dashboard usability based on feedback from 20+ job seekers',
-        'Unlocked growth opportunities revealing recruiter hotspots and optimal application timing strategies'
+        'Integrated filters and KPI cards reducing manual job search effort by 3+ hours/week',
+        'Identified hiring velocity patterns and geographic demand trends',
+        'Enhanced dashboard usability based on feedback from 20+ job seekers',
+        'Revealed recruiter hotspots and optimal application timing strategies'
       ],
       github: 'https://github.com/advaitathalye/Company-hiring-trends-2025',
       demo: 'https://github.com/advaitathalye/Company-hiring-trends-2025',
@@ -73,7 +73,7 @@ const Projects = () => {
     },
     {
       title: 'CX Trends Analysis - Airline Reviews',
-      description: 'Built data infrastructure visualizing 20K+ airline reviews, revealing 5 route-cabin combos with 15–25% NPS decline, driving targeted service improvements.',
+      description: 'Designed Tableau dashboard visualizing 20K+ airline reviews, revealing 5 route-cabin combos with 15–25% NPS decline, enabling targeted service improvements.',
       image: britishAirwaysDashboard,
       technologies: ['Tableau', 'Excel', 'Data Cleaning', 'NPS Analysis'],
       metrics: [
@@ -82,10 +82,10 @@ const Projects = () => {
         { label: 'Route-Cabin Issues', value: '5', icon: Users }
       ],
       highlights: [
-        'Scaled operations by cleaning and merging multi-source data enabling metric filtering by traveler type',
-        'Drove growth through data identifying 5 specific route-cabin combinations with significant NPS decline',
-        'Built data infrastructure with interactive dashboard including seat class and review category filters',
-        'Unlocked growth opportunities enabling targeted service improvements through data-driven insights'
+        'Cleaned and merged multi-source data enabling metric filtering by traveler type',
+        'Identified 5 specific route-cabin combinations with significant NPS decline',
+        'Created interactive dashboard with seat class and review category filters',
+        'Enabled targeted service improvements through data-driven insights'
       ],
       github: 'https://github.com/advaitathalye/British-Airways-Data-Analysis-Dashboard',
       demo: 'https://github.com/advaitathalye/British-Airways-Data-Analysis-Dashboard',
