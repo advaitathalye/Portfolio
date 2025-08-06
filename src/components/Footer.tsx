@@ -77,7 +77,7 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Get In Touch</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Cleveland, Ohio (Open to relocation)</p>
+                <p>San Francisco, CA</p>
                 <a href="mailto:advaiitathalye@gmail.com" className="hover:text-primary transition-smooth block">
                   advaiitathalye@gmail.com
                 </a>
