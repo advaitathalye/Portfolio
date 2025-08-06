@@ -65,10 +65,10 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Analytics clicked for me during Computer Science in India - data isn't just numbers, it's the foundation of every smart business decision. That insight drove me to Cleveland State for my MIS Master's, and now I'm in San Francisco solving a problem every scaling company faces: turning data chaos into clear action.
+                  Analytics clicked for me during Computer Science in India, data isn't just numbers, it's the foundation of every smart business decision. That insight drove me to Cleveland State for my MIS Master's, and now I'm in San Francisco solving a problem every scaling company faces: turning data chaos into clear action.
                 </p>
                 <p>
-                  33+ years across enterprise operations and high-growth companies taught me this: organizations have tons of data but struggle with actionable insights.
+                  3+ years across enterprise operations and high-growth companies taught me this: organizations have tons of data but struggle with actionable insights.
                 </p>
                 <p>
                   <strong>Key wins:</strong> Automated KPI reporting (saved 140+ hours monthly) • Improved enrollment conversion 34% → 38% with intuitive dashboards • Cut reporting delays from 6 hours to real-time
