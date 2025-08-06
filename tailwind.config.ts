@@ -119,6 +119,14 @@ export default {
 				'pulse-glow': {
 					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.3)' },
 					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.6)' }
+				},
+				'urgent-pulse': {
+					'0%, 100%': { transform: 'scale(1)', opacity: '1' },
+					'50%': { transform: 'scale(1.05)', opacity: '0.9' }
+				},
+				'startup-bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-5px)' }
 				}
 			},
 			animation: {
@@ -132,11 +140,14 @@ export default {
 				'slide-up': 'slide-up 0.6s ease-out',
 				'glow': 'glow 2s ease-in-out infinite',
 				'float': 'float 3s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'urgent-pulse': 'urgent-pulse 1.5s ease-in-out infinite',
+				'startup-bounce': 'startup-bounce 2s ease-in-out infinite'
 			},
 			fontFamily: {
-				sans: ['Roboto', 'Montserrat', 'Source Sans Pro', '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'system-ui', 'sans-serif'],
-				mono: ['JetBrains Mono', 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'monospace']
+				sans: ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+				mono: ['JetBrains Mono', 'SF Mono', 'Monaco', 'Cascadia Code', 'monospace'],
+				accent: ['Poppins', 'Inter', 'system-ui', 'sans-serif']
 			}
 		}
 	},
