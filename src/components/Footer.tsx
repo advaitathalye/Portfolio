@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand Section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gradient">Advait Athalye</h3>
+              
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
