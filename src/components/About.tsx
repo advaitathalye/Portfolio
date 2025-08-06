@@ -40,7 +40,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Recent MIS Master's graduate from Cleveland State University with 3+ years of hands-on experience 
+              Recent MIS Master's graduate from Cleveland State University with 3+ years of hands-on experience
               transforming complex data into business-driving insights. From HR firms (handling enterprise-scale chaos) 
               to cybersecurity startups (where every optimization can make or break the quarter) I specialize in turning messy datasets 
               into clear, actionable strategies that executives actually understand and implement.
@@ -71,7 +71,7 @@ const About = () => {
                   I'm obsessed with turning data chaos into decisions that actually matter.
                 </p>
                 <p>
-                  My analytics journey started during Computer Science in India, where I had that lightbulb moment: data isn't just numbers, it's the secret sauce behind every smart business move. That realization drove me to Cleveland State for my MIS Master's, diving deep into the art of making data work for people, not against them.
+                  My analytics journey started during Computer Science in India, where I had that lightbulb moment: data isn't just numbers, it's the secret sauce behind every smart business move. That realization drove me to Cleveland State for my MIS Master's, and now I'm based in San Francisco, diving deep into the art of making data work for people, not against them.
                 </p>
                 <p>
                   Here's what 3+ years in the trenches taught me: Most companies are drowning in data but starving for insights. I try to fix that gap.
