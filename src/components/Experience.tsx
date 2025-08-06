@@ -1,6 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Building2, Calendar, MapPin } from 'lucide-react';
+import FadeIn from '@/components/FadeIn';
+import ParallaxSection from '@/components/ParallaxSection';
 
 const Experience = () => {
   const experiences = [
@@ -74,16 +76,20 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-20 bg-secondary/30 relative overflow-hidden">
+      <ParallaxSection speed={0.3} className="absolute inset-0 opacity-30">
+        <div className="w-full h-full bg-gradient-to-tr from-secondary/20 to-primary/5" />
+      </ParallaxSection>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <FadeIn className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">Experience</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A journey through data analytics roles where I've consistently delivered business value through innovative data solutions.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Experience Timeline */}
           <div className="relative">
@@ -91,13 +97,14 @@ const Experience = () => {
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary transform md:-translate-x-0.5" />
 
             {experiences.map((exp, index) => (
-              <div key={index} className="relative mb-12 last:mb-0">
-                {/* Timeline Dot */}
-                <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-2 shadow-medium" />
+              <FadeIn key={index} delay={index * 0.2}>
+                <div className="relative mb-12 last:mb-0">
+                  {/* Timeline Dot */}
+                  <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-2 shadow-medium hover:scale-125 hover:shadow-[0_0_15px_hsl(var(--primary))] transition-all duration-300" />
 
-                {/* Content Card */}
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:ml-auto md:pl-8'}`}>
-                  <Card className="bg-card border-2 border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300 group">
+                  {/* Content Card */}
+                  <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:ml-auto md:pl-8'}`}>
+                    <Card className="glass-card hover-lift hover-glow border-2 border-primary/20 shadow-soft hover:shadow-medium transition-all duration-500 group">
                     <CardContent className="p-6">
                       {/* Header */}
                       <div className="flex flex-wrap items-start justify-between mb-4">
@@ -110,7 +117,7 @@ const Experience = () => {
                             {exp.company}
                           </div>
                         </div>
-                        <Badge className="bg-primary/10 text-primary border-primary/20">
+                        <Badge className="glass-effect text-primary border-primary/20 hover:bg-primary/10 hover:scale-105 transition-all duration-300">
                           {exp.type}
                         </Badge>
                       </div>
@@ -153,51 +160,56 @@ const Experience = () => {
                       {/* Technologies */}
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech, idx) => (
-                          <Badge key={idx} variant="outline" className="text-xs">
+                          <Badge key={idx} variant="outline" className="text-xs hover:bg-primary/10 hover:border-primary/30 hover:scale-105 transition-all duration-300">
                             {tech}
                           </Badge>
                         ))}
                       </div>
                     </CardContent>
-                  </Card>
+                    </Card>
+                  </div>
                 </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
 
           {/* Education & Certifications */}
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {/* Education */}
-            <Card className="bg-card border-2 border-primary/20 shadow-soft">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-6 text-primary-emphasis">Education</h3>
-                <div className="space-y-6">
-                  {education.map((edu, index) => (
-                    <div key={index} className="border-l-2 border-primary/20 pl-4">
-                      <h4 className="font-semibold">{edu.degree}</h4>
-                      <p className="text-primary font-medium">{edu.institution}</p>
-                      <p className="text-sm text-muted-foreground">{edu.period}</p>
-                      <p className="text-sm text-muted-foreground mt-1">{edu.details}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <FadeIn delay={0.4}>
+              <Card className="glass-card border-2 border-primary/20 shadow-soft hover-lift">
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-6 text-primary-emphasis">Education</h3>
+                  <div className="space-y-6">
+                    {education.map((edu, index) => (
+                      <div key={index} className="border-l-2 border-primary/20 pl-4 hover:border-primary/40 hover:translate-x-1 transition-all duration-200">
+                        <h4 className="font-semibold hover:text-primary transition-colors">{edu.degree}</h4>
+                        <p className="text-primary font-medium">{edu.institution}</p>
+                        <p className="text-sm text-muted-foreground">{edu.period}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{edu.details}</p>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </FadeIn>
 
             {/* Certifications */}
-            <Card className="bg-card border-2 border-primary/20 shadow-soft">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-6 text-primary-emphasis">Certifications</h3>
-                <div className="space-y-3">
-                  {certifications.map((cert, index) => (
-                    <div key={index} className="flex items-center">
-                      <span className="w-2 h-2 bg-primary rounded-full mr-3" />
-                      <span className="text-muted-foreground">{cert}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <FadeIn delay={0.5}>
+              <Card className="glass-card border-2 border-primary/20 shadow-soft hover-lift">
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-6 text-primary-emphasis">Certifications</h3>
+                  <div className="space-y-3">
+                    {certifications.map((cert, index) => (
+                      <div key={index} className="flex items-center hover:translate-x-1 transition-transform duration-200">
+                        <span className="w-2 h-2 bg-primary rounded-full mr-3 hover:shadow-[0_0_10px_hsl(var(--primary))] transition-shadow" />
+                        <span className="text-muted-foreground">{cert}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </FadeIn>
           </div>
         </div>
       </div>

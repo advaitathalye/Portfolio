@@ -3,6 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, TrendingUp, Users, DollarSign, BarChart3 } from 'lucide-react';
+import FadeIn from '@/components/FadeIn';
+import ParallaxSection from '@/components/ParallaxSection';
 import marketingIncrementalityChart from '@/assets/marketing-incrementality-chart.png';
 import companyHiringDashboard from '@/assets/company-hiring-dashboard.png';
 import britishAirwaysDashboard from '@/assets/british-airways-dashboard.png';
@@ -101,75 +103,80 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-20 relative overflow-hidden">
+      <ParallaxSection speed={0.2} className="absolute inset-0 opacity-20">
+        <div className="w-full h-full bg-gradient-to-tr from-secondary/20 to-primary/10" />
+      </ParallaxSection>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <FadeIn className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">Featured Projects</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A showcase of data-driven solutions that have delivered measurable business impact across various industries.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category)}
-                className="shadow-soft hover:shadow-medium transition-all duration-300"
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
+          <FadeIn delay={0.2}>
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  variant={selectedCategory === category ? "default" : "outline"}
+                  onClick={() => setSelectedCategory(category)}
+                  className="glass-effect shadow-soft hover:shadow-medium hover:scale-105 transition-all duration-300"
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
+          </FadeIn>
 
           {/* Projects Grid */}
           <div className="grid lg:grid-cols-2 gap-8">
             {filteredProjects.map((project, index) => (
-              <Card 
-                key={index} 
-                className="group bg-card border-2 border-primary/20 shadow-soft hover:shadow-large transition-all duration-500 overflow-hidden"
-              >
-                <CardHeader className="p-0">
-                  <div className="h-48 relative overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-background/60" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <Badge className="bg-background/80 text-foreground border-0">
-                        {project.category}
-                      </Badge>
+              <FadeIn key={index} delay={index * 0.1}>
+                <Card className="group glass-card hover-lift hover-glow border-2 border-primary/20 shadow-soft hover:shadow-large transition-all duration-500 overflow-hidden">
+                  <ParallaxSection speed={0.1} className="relative">{/* ... keep existing code */}
+                  <CardHeader className="p-0">
+                    <div className="h-48 relative overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <Badge className="glass-effect text-foreground border-0 hover:shadow-md transition-shadow">
+                          {project.category}
+                        </Badge>
+                      </div>
                     </div>
-                  </div>
-                </CardHeader>
+                  </CardHeader>
                 
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl mb-3 group-hover:text-primary transition-smooth">
-                    {project.title}
-                  </CardTitle>
+                  <CardContent className="p-6">
+                    <CardTitle className="text-xl mb-3 group-hover:text-primary transition-all duration-300 hover:tracking-wide">
+                      {project.title}
+                    </CardTitle>
                   
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {project.description}
                   </p>
 
-                  {/* Metrics */}
-                  <div className="grid grid-cols-3 gap-4 mb-6">
-                    {project.metrics.map((metric, idx) => (
-                      <div key={idx} className="text-center">
-                        <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
-                          <metric.icon className="w-4 h-4 text-white" />
+                    {/* Metrics */}
+                    <div className="grid grid-cols-3 gap-4 mb-6">
+                      {project.metrics.map((metric, idx) => (
+                        <div key={idx} className="text-center group/metric hover:scale-105 transition-transform duration-300">
+                          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mx-auto mb-2 group-hover/metric:pulse-glow transition-all duration-300">
+                            <metric.icon className="w-4 h-4 text-white" />
+                          </div>
+                          <div className="text-lg font-semibold text-primary group-hover/metric:text-primary/80 transition-colors">{metric.value}</div>
+                          <div className="text-xs text-muted-foreground">{metric.label}</div>
                         </div>
-                        <div className="text-lg font-semibold text-primary">{metric.value}</div>
-                        <div className="text-xs text-muted-foreground">{metric.label}</div>
-                      </div>
-                    ))}
-                  </div>
+                      ))}
+                    </div>
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-6">
@@ -193,29 +200,33 @@ const Projects = () => {
                     </ul>
                   </div>
 
-                  {/* Action Button */}
-                  <div className="flex justify-center">
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-full">
-                      <Button size="sm" className="w-full">
-                        <Github className="w-4 h-4 mr-2" />
-                        View Details
-                      </Button>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+                    {/* Action Button */}
+                    <div className="flex justify-center">
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-full">
+                        <Button size="sm" className="w-full glass-effect hover:shadow-lg hover:scale-105 transition-all duration-300">
+                          <Github className="w-4 h-4 mr-2" />
+                          View Details
+                        </Button>
+                      </a>
+                    </div>
+                  </CardContent>
+                  </ParallaxSection>
+                </Card>
+              </FadeIn>
             ))}
           </div>
 
           {/* View All Projects Button */}
-          <div className="text-center mt-12">
-            <a href="https://github.com/advaitathalye" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="shadow-soft hover:shadow-medium transition-all duration-300">
-                View All Projects
-                <ExternalLink className="w-5 h-5 ml-2" />
-              </Button>
-            </a>
-          </div>
+          <FadeIn delay={0.5}>
+            <div className="text-center mt-12">
+              <a href="https://github.com/advaitathalye" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="glass-effect shadow-soft hover:shadow-large hover:scale-105 transition-all duration-300">
+                  View All Projects
+                  <ExternalLink className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>
