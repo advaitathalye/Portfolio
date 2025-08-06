@@ -79,7 +79,7 @@ const Experience = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Experience</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">Experience</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A journey through data analytics roles where I've consistently delivered business value through innovative data solutions.
             </p>
@@ -88,16 +88,16 @@ const Experience = () => {
           {/* Experience Timeline */}
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent transform md:-translate-x-0.5" />
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary transform md:-translate-x-0.5" />
 
             {experiences.map((exp, index) => (
               <div key={index} className="relative mb-12 last:mb-0">
                 {/* Timeline Dot */}
-                <div className="absolute left-2 md:left-1/2 w-4 h-4 gradient-primary rounded-full transform md:-translate-x-2 shadow-medium" />
+                <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-2 shadow-medium" />
 
                 {/* Content Card */}
                 <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:ml-auto md:pl-8'}`}>
-                  <Card className="gradient-card shadow-soft hover:shadow-medium transition-all duration-300 group">
+                  <Card className="bg-card border-2 border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300 group">
                     <CardContent className="p-6">
                       {/* Header */}
                       <div className="flex flex-wrap items-start justify-between mb-4">
@@ -168,9 +168,9 @@ const Experience = () => {
           {/* Education & Certifications */}
           <div className="grid md:grid-cols-2 gap-8 mt-16">
             {/* Education */}
-            <Card className="gradient-card shadow-soft">
+            <Card className="bg-card border-2 border-primary/20 shadow-soft">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-6 text-gradient">Education</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-primary-emphasis">Education</h3>
                 <div className="space-y-6">
                   {education.map((edu, index) => (
                     <div key={index} className="border-l-2 border-primary/20 pl-4">
@@ -185,9 +185,9 @@ const Experience = () => {
             </Card>
 
             {/* Certifications */}
-            <Card className="gradient-card shadow-soft">
+            <Card className="bg-card border-2 border-primary/20 shadow-soft">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-6 text-gradient">Certifications</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-primary-emphasis">Certifications</h3>
                 <div className="space-y-3">
                   {certifications.map((cert, index) => (
                     <div key={index} className="flex items-center">

@@ -108,7 +108,7 @@ const Hero = () => {
               <FadeIn>
                 <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
                 <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                  <span className="text-gradient animate-text-reveal">Advait Athalye</span>
+                  <span className="text-primary-emphasis animate-text-reveal">Advait Athalye</span>
                 </h1>
               </FadeIn>
 

@@ -38,7 +38,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Master's grad. 3 years experience. From HR firms (handling enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter), my focus has been the same, building analytics that don't just inform, but transform how teams make decisions.
             </p>
@@ -47,9 +47,9 @@ const About = () => {
           {/* Highlights Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="gradient-card shadow-soft hover:shadow-medium transition-all duration-300 group">
+              <Card key={index} className="bg-card border-2 border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse-glow transition-all duration-300">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse-glow transition-all duration-300">
                     <highlight.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold mb-3">{highlight.title}</h3>

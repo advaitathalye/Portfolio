@@ -67,7 +67,7 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Let's Connect</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">Let's Connect</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Ready to discuss how data analytics can drive your business forward? I'm open to opportunities 
               in high-growth startups and data-driven companies.
@@ -77,7 +77,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card className="gradient-card shadow-soft">
+              <Card className="bg-card border-2 border-primary/20 shadow-soft">
                 <CardHeader>
                   <CardTitle>Get in Touch</CardTitle>
                 </CardHeader>
@@ -88,7 +88,7 @@ const Contact = () => {
                       href={info.href}
                       className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary/50 transition-smooth group"
                     >
-                      <div className="w-12 h-12 gradient-primary rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                         <info.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -101,7 +101,7 @@ const Contact = () => {
               </Card>
 
               {/* Social Links */}
-              <Card className="gradient-card shadow-soft">
+              <Card className="bg-card border-2 border-primary/20 shadow-soft">
                 <CardHeader>
                   <CardTitle>Follow Me</CardTitle>
                 </CardHeader>
@@ -125,7 +125,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="gradient-card shadow-soft">
+            <Card className="bg-card border-2 border-primary/20 shadow-soft">
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
               </CardHeader>

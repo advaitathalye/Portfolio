@@ -106,7 +106,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">Featured Projects</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A showcase of data-driven solutions that have delivered measurable business impact across various industries.
             </p>
@@ -131,7 +131,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <Card 
                 key={index} 
-                className="group gradient-card shadow-soft hover:shadow-large transition-all duration-500 overflow-hidden"
+                className="group bg-card border-2 border-primary/20 shadow-soft hover:shadow-large transition-all duration-500 overflow-hidden"
               >
                 <CardHeader className="p-0">
                   <div className="h-48 relative overflow-hidden">
@@ -140,7 +140,7 @@ const Projects = () => {
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                    <div className="absolute inset-0 bg-background/60" />
                     <div className="absolute bottom-4 left-4 right-4">
                       <Badge className="bg-background/80 text-foreground border-0">
                         {project.category}
@@ -162,7 +162,7 @@ const Projects = () => {
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     {project.metrics.map((metric, idx) => (
                       <div key={idx} className="text-center">
-                        <div className="w-8 h-8 gradient-primary rounded-full flex items-center justify-center mx-auto mb-2">
+                        <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
                           <metric.icon className="w-4 h-4 text-white" />
                         </div>
                         <div className="text-lg font-semibold text-primary">{metric.value}</div>

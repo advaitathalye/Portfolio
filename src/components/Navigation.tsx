@@ -53,7 +53,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="text-xl font-semibold text-gradient">
+          <a href="#" className="text-xl font-semibold text-primary-emphasis">
             Advait Athalye
           </a>
 
@@ -70,7 +70,7 @@ const Navigation = () => {
                 }`}
               >
                 {item.label}
-                <span className={`absolute bottom-0 left-0 h-0.5 gradient-primary transition-all duration-300 ${
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 ${
                   isActive(item.href) ? 'w-full' : 'w-0 group-hover:w-full'
                 }`} />
               </a>

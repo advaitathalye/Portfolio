@@ -67,7 +67,7 @@ const Skills = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Skills & Expertise</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-emphasis">Skills & Expertise</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               A comprehensive toolkit built through years of hands-on experience with cutting-edge data technologies and methodologies.
             </p>
@@ -76,7 +76,7 @@ const Skills = () => {
           {/* Technical Skills Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {skillCategories.map((category, index) => (
-              <Card key={index} className="gradient-card shadow-soft hover:shadow-medium transition-all duration-300 group">
+              <Card key={index} className="bg-card border-2 border-primary/20 shadow-soft hover:shadow-medium transition-all duration-300 group">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center text-xl">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 bg-primary/20">
@@ -100,7 +100,7 @@ const Skills = () => {
           </div>
 
           {/* Technical Skills */}
-          <Card className="gradient-card shadow-soft mb-16">
+          <Card className="bg-card border-2 border-primary/20 shadow-soft mb-16">
             <CardHeader>
               <CardTitle className="flex items-center text-xl">
                 <Cloud className="w-6 h-6 mr-3 text-primary" />
@@ -122,7 +122,7 @@ const Skills = () => {
           </Card>
 
           {/* Professional Skills */}
-          <Card className="gradient-card shadow-soft">
+          <Card className="bg-card border-2 border-primary/20 shadow-soft">
             <CardHeader>
               <CardTitle className="flex items-center text-xl">
                 <Users className="w-6 h-6 mr-3 text-primary" />

@@ -42,10 +42,9 @@
     --data-orange: 25 95% 53%;
     --data-available: 120 100% 40%;
     
-    /* Data visualization gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(193 95% 68%), hsl(262 83% 58%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 13% 96%), hsl(193 95% 95%));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
+    /* Enhanced solid colors for visual interest */
+    --card-enhanced: 220 13% 98%;
+    --accent-subtle: 262 83% 95%;
     
     /* Enhanced shadows with cyan glow */
     --shadow-soft: 0 2px 10px hsl(193 95% 68% / 0.12);
@@ -105,10 +104,9 @@
     --input: 217 33% 17%;
     --ring: 193 95% 68%;
     
-    /* Dark mode data visualization gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(193 95% 68%), hsl(262 83% 58%));
-    --gradient-hero: linear-gradient(135deg, hsl(193 95% 68% / 0.1), hsl(262 83% 58% / 0.1));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
+    /* Dark mode enhanced solid colors */
+    --card-enhanced: 217 33% 15%;
+    --accent-subtle: 262 83% 20%;
     
     /* Dark mode enhanced shadows */
     --shadow-soft: 0 2px 10px hsl(193 95% 68% / 0.15);
@@ -145,16 +143,12 @@
 }
 
 @layer utilities {
-  .gradient-primary {
-    background: var(--gradient-primary);
+  .card-enhanced {
+    background: hsl(var(--card-enhanced));
   }
   
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-  
-  .gradient-card {
-    background: var(--gradient-card);
+  .accent-subtle {
+    background: hsl(var(--accent-subtle));
   }
   
   .shadow-soft {
@@ -177,11 +171,9 @@
     transition: var(--transition-spring);
   }
   
-  .text-gradient {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .text-primary-emphasis {
+    color: hsl(var(--primary));
+    font-weight: 600;
   }
   
   .scroll-reveal {
