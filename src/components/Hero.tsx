@@ -78,7 +78,7 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-8">
             {/* Profile Photo - Left Side */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1 lg:w-1/2">
-              <FadeIn delay={0.9} className="relative w-full max-w-lg mx-auto">
+              <FadeIn delay={0.9} className="relative w-full max-w-sm mx-auto">
                 <div 
                   ref={photoRef}
                   className={`w-full h-auto rounded-2xl ${isMobile ? 'sm:rounded-2xl' : 'sm:rounded-3xl'} overflow-hidden shadow-2xl transition-all duration-500 ease-out`}
