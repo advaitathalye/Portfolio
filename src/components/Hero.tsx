@@ -127,12 +127,6 @@ const Hero = () => {
                 </p>
               </FadeIn>
 
-              {/* Description */}
-              <FadeIn delay={0.4} className="stagger-2">
-                <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Data analyst with 3+ years solving the problem every company faces: drowning in data but starving for insights.
-                </p>
-              </FadeIn>
 
               {/* CTA Buttons */}
               <FadeIn delay={0.6} className="stagger-3">
