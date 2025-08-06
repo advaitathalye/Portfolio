@@ -123,7 +123,7 @@ const Hero = () => {
               {/* Description */}
               <FadeIn delay={0.4} className="stagger-2">
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  MIS Master's grad with 3+ years solving the problem every company faces: drowning in data but starving for insights. From HR firms (handling enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter), my focus has been the same, building analytics that don't just inform, but transform how teams make decisions.
+                  MIS Master's grad with 3+ years solving the problem every company faces: drowning in data but starving for insights.
                 </p>
               </FadeIn>
 
