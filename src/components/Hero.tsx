@@ -104,51 +104,31 @@ const Hero = () => {
             </div>
 
             {/* Content - Right Side */}
-            <div className="text-center lg:text-left order-1 lg:order-2">
+            <div className="text-center lg:text-left order-1 lg:order-2 max-w-3xl">
 
-              {/* Greeting */}
+              {/* Single Headline */}
               <FadeIn>
-                <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 font-accent">
-                  <span className="text-primary-emphasis animate-text-reveal">Advait Athalye</span>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 font-accent leading-tight">
+                  <span className="text-primary-emphasis">Growth-Focused Data Analyst</span>
+                  <br />
+                  <span className="text-6xl md:text-7xl lg:text-8xl font-black text-foreground animate-urgent-pulse">140+</span>
+                  <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground ml-2">hours/month saved</span>
                 </h1>
               </FadeIn>
 
-              {/* Title */}
+              {/* Single Subheadline */}
               <FadeIn delay={0.2} className="stagger-1">
-                <h2 className="text-xl md:text-2xl font-semibold mb-4 text-foreground/90 leading-relaxed">
-                  Growth-Focused Data Analyst who turns chaos into growth - saved 140hrs/month, built dashboards that cut decision time by 94%. A Master's grad, I take messy data and turn it into the insights that executives act on
-                </h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  SF-based • Authorized to work in the US
-                </p>
-              </FadeIn>
-
-              {/* Description */}
-              <FadeIn delay={0.4} className="stagger-2">
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Data analyst with 3+ years solving the problem every company faces: drowning in data but starving for insights.
+                  Master's grad, I take messy data and turn it into the insights that executives act on
                 </p>
               </FadeIn>
 
-              {/* CTA Buttons */}
-              <FadeIn delay={0.6} className="stagger-3">
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              {/* Single CTA */}
+              <FadeIn delay={0.4} className="stagger-2">
+                <div className="mb-8">
                   <a href="#projects">
-                    <Button variant="hero" size="lg">
-                      View Projects
-                    </Button>
-                  </a>
-                  <a href="#contact">
-                    <Button variant="outline" size="lg">
-                      <Mail className="w-5 h-5 mr-2" />
-                      Let's Connect
-                    </Button>
-                  </a>
-                  <a href="/Advait_Athalye_Resume.pdf" download="Advait_Athalye_Resume.pdf">
-                    <Button variant="secondary" size="lg">
-                      <Download className="w-5 h-5 mr-2" />
-                      Download Resume
+                    <Button variant="hero" size="lg" className="font-semibold px-8 py-4 text-lg">
+                      View My Growth Impact
                     </Button>
                   </a>
                 </div>
