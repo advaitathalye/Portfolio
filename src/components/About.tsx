@@ -65,33 +65,19 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm obsessed with turning data chaos into decisions that actually matter.
+                  Analytics clicked for me during Computer Science in India - data isn't just numbers, it's the foundation of every smart business decision. That insight drove me to Cleveland State for my MIS Master's, and now I'm in San Francisco solving a problem every scaling company faces: turning data chaos into clear action.
                 </p>
                 <p>
-                  My analytics journey started during Computer Science in India, where I had that lightbulb moment: data isn't just numbers, it's the secret sauce behind every smart business move. That realization drove me to Cleveland State for my MIS Master's, and now I'm based in San Francisco, diving deep into the art of making data work for people, not against them.
+                  33+ years across enterprise operations and high-growth companies taught me this: organizations have tons of data but struggle with actionable insights.
                 </p>
                 <p>
-                  Here's what 3+ years in the trenches taught me: Most companies are drowning in data but starving for insights. I try to fix that gap.
+                  <strong>Key wins:</strong> Automated KPI reporting (saved 140+ hours monthly) • Improved enrollment conversion 34% → 38% with intuitive dashboards • Cut reporting delays from 6 hours to real-time
                 </p>
                 <p>
-                  I've worked everywhere from HR firms (where I learned to handle enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter).
-                </p>
-                <p className="font-medium text-foreground/80">
-                  The wins that keep me up at night (in a good way):
-                </p>
-                <ul className="space-y-2 ml-4">
-                  <li>• Saved 140+ hours/month automating recruiter KPIs because nobody should live in Excel hell</li>
-                  <li>• Boosted enrollment conversion 34% → 38% with dashboards that admissions teams actually wanted to use</li>
-                  <li>• Eliminated 6-hour reporting lag that was killing operational speed</li>
-                </ul>
-                <p>
-                  My philosophy is simple: Great analytics should feel like magic, not math homework. When executives stop asking "What does this mean?" and start asking "What do we do next?", that's when you know you've nailed it.
+                  My approach: Build analytics that turn complexity into clarity. When teams stop asking "What does this mean?" and start asking "What do we do next?" that's when you know it's working.
                 </p>
                 <p>
-                  <strong>What I actually love doing:</strong> Building dashboards people open every morning • Running A/B tests that settle arguments • Forecasting that doesn't require a crystal ball • Aligning KPIs so everyone stops measuring different things
-                </p>
-                <p>
-                  If you're tired of data that collects dust instead of driving decisions, let's build something that actually moves the needle.
+                  If your data creates more questions than answers, let's fix that.
                 </p>
               </div>
             </div>
