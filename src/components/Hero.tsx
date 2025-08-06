@@ -63,6 +63,15 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Availability Badge */}
+      <div className="fixed top-6 right-6 z-50">
+        <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg backdrop-blur-sm border border-green-400/30 flex items-center gap-2 animate-pulse">
+          <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+          <span className="hidden sm:inline">Available for immediate start</span>
+          <span className="sm:hidden">Available now</span>
+        </div>
+      </div>
+
       {/* Background Elements */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 blur-md"
@@ -71,7 +80,7 @@ const Hero = () => {
       <div className="absolute inset-0 gradient-hero opacity-60" />
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-data-green/20 rounded-full blur-2xl animate-glow" />
+      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-green-500/20 rounded-full blur-2xl animate-glow" />
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
