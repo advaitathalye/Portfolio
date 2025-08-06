@@ -120,7 +120,7 @@ const Hero = () => {
                   Growth-Focused Data Analyst | Saved 140+ hours/month
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
-                  Master's grad, I take messy data and turn it into the insights that executives act on
+                  Master's grad, Data analyst with 3+ years solving the problem every company faces: drowning in data but starving for insights.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
                   SF-based • Authorized to work in the US
