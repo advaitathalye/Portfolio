@@ -106,18 +106,29 @@ const Hero = () => {
             {/* Content - Right Side */}
             <div className="text-center lg:text-left order-1 lg:order-2">
 
-              {/* Single Headline */}
+              {/* Greeting */}
               <FadeIn>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-accent">
-                  <span className="text-primary-emphasis animate-text-reveal">Growth-Focused Data Analyst | Saved 140+ hours/month</span>
+                <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 font-accent">
+                  <span className="text-primary-emphasis animate-text-reveal">Advait Athalye</span>
                 </h1>
               </FadeIn>
 
-              {/* Single Subheadline */}
+              {/* Title */}
               <FadeIn delay={0.2} className="stagger-1">
-                <h2 className="text-xl md:text-2xl font-semibold mb-8 text-foreground/90 leading-relaxed">
-                  Master's grad, I take messy data and turn it into the insights that executives act on
+                <h2 className="text-xl md:text-2xl font-semibold mb-4 text-foreground/90 leading-relaxed">
+                  Growth-Focused Data Analyst who turns chaos into growth - saved 140hrs/month, built dashboards that cut decision time by 94%. A Master's grad, I take messy data and turn it into the insights that executives act on
                 </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  SF-based • Authorized to work in the US
+                </p>
+              </FadeIn>
+
+              {/* Description */}
+              <FadeIn delay={0.4} className="stagger-2">
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+                  Data analyst with 3+ years solving the problem every company faces: drowning in data but starving for insights.
+                </p>
               </FadeIn>
 
               {/* CTA Buttons */}
