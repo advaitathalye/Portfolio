@@ -114,9 +114,12 @@ const Hero = () => {
 
               {/* Title */}
               <FadeIn delay={0.2} className="stagger-1">
-                <h2 className="text-xl md:text-2xl font-semibold mb-6 text-foreground/90 leading-relaxed">
-                  Data analyst who turns chaos into growth - saved 140hrs/month, built dashboards that cut decision time by 94%. A Master's grad, I take messy data and turn it into the insights that executives act on
+                <h2 className="text-xl md:text-2xl font-semibold mb-4 text-foreground/90 leading-relaxed">
+                  Growth-Focused Data Analyst who turns chaos into growth - saved 140hrs/month, built dashboards that cut decision time by 94%. A Master's grad, I take messy data and turn it into the insights that executives act on
                 </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  SF-based • Authorized to work in the US
+                </p>
               </FadeIn>
 
               {/* Description */}
