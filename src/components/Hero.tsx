@@ -6,7 +6,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import heroBackground from '@/assets/hero-background.jpg';
 import profilePhoto from '/lovable-uploads/9e2b1fbd-2eb2-428e-8c5a-28617ae454ff.png';
 import FadeIn from './FadeIn';
-import AvailableBadge from './AvailableBadge';
+
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -105,13 +105,11 @@ const Hero = () => {
 
             {/* Content - Right Side */}
             <div className="text-center lg:text-left order-1 lg:order-2">
-              {/* Available Badge */}
-              <AvailableBadge />
 
               {/* Greeting */}
               <FadeIn>
                 <p className="text-lg text-muted-foreground mb-4">Hello, I'm</p>
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 font-accent">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 font-accent">
                   <span className="text-primary-emphasis animate-text-reveal">Advait Athalye</span>
                 </h1>
               </FadeIn>
