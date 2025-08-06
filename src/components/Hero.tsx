@@ -65,13 +65,12 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 blur-md"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 blur-md"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
-      <div className="absolute inset-0 gradient-hero opacity-60" />
-      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-48 h-48 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-green-500/20 rounded-full blur-2xl animate-glow" />
+      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 right-10 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-green-500/10 rounded-full blur-2xl animate-glow" />
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
