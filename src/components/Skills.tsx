@@ -47,7 +47,7 @@ const Skills = () => {
   ];
 
   const tools = [
-    'Power BI', 'Python', 'SQL', 'Tableau', 'R', 'DAX', 'PostgreSQL', 
+    'Power BI', 'Python', 'SQL', 'Tableau', 'Looker', 'R', 'DAX', 'PostgreSQL', 
     'BigQuery', 'dbt', 'A/B Testing', 'Statistical Modeling', 'ETL Workflows', 
     'API Integration'
   ];

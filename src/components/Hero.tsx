@@ -116,17 +116,14 @@ const Hero = () => {
               {/* Title */}
               <FadeIn delay={0.2} className="stagger-1">
                 <h2 className="text-xl md:text-2xl font-semibold mb-6 text-foreground/90 leading-relaxed">
-                  Saved 140+ hrs/month through automation | Built dashboards for Big 4 vendors | Data Analyst specializing in Business Intelligence & Marketing Analytics
-                  <br />
-                  Master's grad May&nbsp;'25
+                  Data analyst who turns chaos into growth - saved 140hrs/month, built dashboards that cut decision time by 94%. A Master's grad, I take messy data and turn it into the insights that executives act on
                 </h2>
               </FadeIn>
 
               {/* Description */}
               <FadeIn delay={0.4} className="stagger-2">
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Recent MIS Master's grad with 3+ years experience in BI dashboards, marketing analytics, and statistical modeling. 
-                  I love taking messy, complex datasets and turning them into insights that actually make sense to people.
+                  MIS Master's grad with 3+ years solving the problem every company faces: drowning in data but starving for insights. From HR firms (handling enterprise-scale chaos) to cybersecurity startups (where every optimization can make or break the quarter), my focus has been the same, building analytics that don't just inform, but transform how teams make decisions.
                 </p>
               </FadeIn>
 
