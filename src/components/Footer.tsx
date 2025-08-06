@@ -38,9 +38,6 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-gradient">Advait Athalye</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Data Analyst passionate about turning complex analytics into business impact. Recent MIS Master's grad with 3+ years experience.
-              </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
