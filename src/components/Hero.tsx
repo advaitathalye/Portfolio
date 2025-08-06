@@ -63,15 +63,6 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Availability Badge */}
-      <div className="fixed top-6 right-6 z-50">
-        <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg backdrop-blur-sm border border-green-400/30 flex items-center gap-2 animate-pulse">
-          <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-          <span className="hidden sm:inline">Available for immediate start</span>
-          <span className="sm:hidden">Available now</span>
-        </div>
-      </div>
-
       {/* Background Elements */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 blur-md"
