@@ -203,7 +203,7 @@ const Projects = () => {
                     {/* Action Button */}
                     <div className="flex justify-center">
                       <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-full">
-                        <Button size="sm" className="w-full glass-effect hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        <Button size="sm" variant="outline" className="w-full bg-primary/10 border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-lg hover:scale-105 transition-all duration-300">
                           <Github className="w-4 h-4 mr-2" />
                           View Details
                         </Button>
