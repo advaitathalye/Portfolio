@@ -1,25 +1,28 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Player } from '@lottiefiles/react-lottie-player';
+import { TrendingUp, Database, Brain, PieChart } from 'lucide-react';
 import FadeIn from '@/components/FadeIn';
 import ParallaxSection from '@/components/ParallaxSection';
-import orbitAnimation from '../../ORBIT-5-01-LITE.json';
 
 const About = () => {
   const highlights = [
     {
+      icon: TrendingUp,
       title: '140+ hrs saved',
       description: 'Monthly automation impact through ETL pipelines and dashboard optimization for Big 4 vendors'
     },
     {
+      icon: Database,
       title: 'ETL Automation',
       description: 'Built automated pipelines saving 30+ hrs/week and cut time-to-fill from 45 to 31 days for enterprise roles'
     },
     {
+      icon: Brain,
       title: 'Statistical Analysis',
       description: 'Expert in A/B testing, geo-lift experiments, and causal inference for marketing attribution modeling'
     },
     {
+      icon: PieChart,
       title: 'BI Dashboards',
       description: 'Created Power BI and Tableau dashboards cutting review time from 3 hours to under 10 minutes'
     }
@@ -53,15 +56,8 @@ const About = () => {
               <FadeIn key={index} delay={index * 0.1}>
                 <Card className="glass-card hover-lift hover-glow transition-all duration-500 group">
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:pulse-glow transition-all duration-300 hover:scale-110">
-                      <Player
-                        src={orbitAnimation}
-                        className="w-10 h-10"
-                        autoplay
-                        loop
-                        speed={0.8}
-                        style={{ filter: 'brightness(1.2) contrast(1.1)' }}
-                      />
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:pulse-glow transition-all duration-300 hover:scale-110">
+                      <highlight.icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">{highlight.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{highlight.description}</p>
