@@ -64,11 +64,13 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Elements */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 blur-md"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="animated-gradient-bg absolute inset-0" />
+        <div className="animated-gradient-overlay absolute inset-0" />
+      </div>
+      
+      {/* Additional floating elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
       <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-green-500/10 rounded-full blur-2xl animate-glow" />
