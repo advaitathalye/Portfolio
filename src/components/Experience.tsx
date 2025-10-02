@@ -7,6 +7,20 @@ import ParallaxSection from '@/components/ParallaxSection';
 const Experience = () => {
   const experiences = [
     {
+      company: 'Dittra LLC',
+      role: 'Data Analytics Intern',
+      period: 'Aug 2025 - Present',
+      location: 'Austin, TX (Remote)',
+      type: 'Internship',
+      description: 'Delivering advanced Power BI dashboards and automated data pipelines for marketing and finance analytics optimization.',
+      companyDescription: 'A data-driven consulting firm specializing in marketing analytics and ROI optimization for enterprise clients.',
+      achievements: [
+        'Delivered Power BI dashboards consolidating ROI and budget metrics, giving marketing and finance leaders immediate visibility to adjust spend allocations',
+        'Automated SQL/Python pipelines, cutting refresh time from 2 hrs to 10 mins and ensuring accurate leadership reviews'
+      ],
+      technologies: ['Power BI', 'SQL', 'Python', 'Data Pipelines', 'Marketing Analytics']
+    },
+    {
       company: 'SSi People',
       role: 'Data Analyst',
       period: 'Aug 2022 - Aug 2023',
