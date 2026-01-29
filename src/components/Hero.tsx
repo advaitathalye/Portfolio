@@ -125,7 +125,7 @@ const Hero = () => {
                   Master's grad, Data analyst with 3+ years solving the problem every company faces: drowning in data but starving for insights.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  SF-based • Authorized to work in the US
+                  Authorized to work in the US
                 </p>
               </FadeIn>
 
