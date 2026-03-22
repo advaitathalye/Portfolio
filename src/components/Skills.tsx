@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, Database, BarChart3, Brain } from 'lucide-react';
 import FadeIn from '@/components/FadeIn';
-import FadeIn from '@/components/FadeIn';
 import ParallaxSection from '@/components/ParallaxSection';
 
 const Skills = () => {
