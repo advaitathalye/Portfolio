@@ -48,9 +48,6 @@ const Skills = () => {
     }
   ];
 
-
-  return (
-
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
       <ParallaxSection speed={0.4} className="absolute inset-0 opacity-25">
