@@ -7,19 +7,20 @@ import ParallaxSection from '@/components/ParallaxSection';
 const Experience = () => {
   const experiences = [
     {
-      company: 'Dittra LLC',
+      company: 'Dittra',
       role: 'Data Analyst Intern',
       period: 'Aug 2025 - Present',
       location: 'Austin, TX (Remote)',
       type: 'Internship',
-      description: 'Delivering advanced Power BI dashboards and automated data pipelines for marketing and finance analytics optimization.',
+      description: 'Building Power BI dashboards and automated ETL pipelines for marketing analytics across 15 paid channels.',
       companyDescription: 'A data-driven consulting firm specializing in marketing analytics and ROI optimization for enterprise clients.',
       achievements: [
-        'Developed Power BI dashboards tracking spend across 15 paid channels, leading leadership to reallocate 20% of Q4 budget from TV to email campaigns',
-        'Engineered SQL and Python ETL workflows with query optimization, reducing refresh time from 2 hours to 10 minutes',
-        'Analyzed CPA, ROAS, and conversion trends, producing three high-impact recommendations adopted by leadership'
+        'Built Power BI dashboards in DAX and Power Query for 15 paid channels, used in weekly performance reviews with the Marketing Director to steer Q4 spend and support a 20% shift from paid search to mail',
+        'Engineered Python + SQL ETL workflows pulling from 5 ad platform APIs, performing validation and reconciliation checks with indexing and query optimization to cut refresh time from 2 hours to 10 minutes',
+        'Defined and maintained KPI logic for CAC, blended ROAS, and incremental vs. organic conversions to standardize reporting across marketing dashboards',
+        'Support published reports in Power BI Service, resolving 8 refresh failures caused by upstream API changes by updating Power Query M logic and tightening validation rules'
       ],
-      technologies: ['Power BI', 'SQL', 'Python', 'ETL', 'Marketing Analytics']
+      technologies: ['Power BI', 'DAX', 'Power Query', 'Python', 'SQL', 'ETL', 'API Integration']
     },
     {
       company: 'SSi People',
@@ -27,15 +28,15 @@ const Experience = () => {
       period: 'Aug 2022 - Aug 2023',
       location: 'India',
       type: 'Full-time',
-      description: 'Led analytics initiatives for Big 4 consulting vendors, focusing on recruitment funnel optimization and automated BI dashboard development.',
+      description: 'Built recurring reporting and dashboards tracking funnel KPIs across 200+ roles using Salesforce, Greenhouse, and Lever data.',
       companyDescription: 'A leading staffing and workforce solutions firm delivering top talent to Fortune 500 clients across IT, engineering, and professional services.',
       achievements: [
-        'Automated ETL pipelines & Power BI dashboards saving 30 hrs/week and enabling same-day hiring decisions',
-        'Analyzed 3 recruitment funnels to pinpoint 35% candidate drop-off, reducing time-to-fill from 45 to 31 days',
-        'Executed sourcing via A/B tests, boosting interview conversion 12% to 22% for 200+ roles/month',
-        'Delivered KPI dashboards that reduced prep time from 2 hrs to 15 mins for C-suite hiring reviews'
+        'Built recurring reporting and dashboards in Power BI and SQL tracking funnel KPIs across 200+ roles, monitoring time-to-fill, candidate-to-interview rate, and offer acceptance',
+        'Tested sourcing strategies using A/B-style comparisons and logistic regression, improving interview attendance from 12% to 22%',
+        'Identified a 35% drop-off between sourcing and phone screen stages, then delivered findings to 12 hiring managers that supported process changes reducing time-to-fill from 45 to 31 days',
+        'Integrated Greenhouse, Lever, and ATS data through Python-SQL ETL pipelines and consolidated reporting into a single Power BI semantic model to reduce discrepancies'
       ],
-      technologies: ['Power BI', 'ETL Pipelines', 'A/B Testing', 'SQL', 'Dashboard Automation']
+      technologies: ['Power BI', 'SQL', 'Python', 'A/B Testing', 'Logistic Regression', 'ETL Pipelines']
     },
     {
       company: 'Pace Infotech',
@@ -43,15 +44,14 @@ const Experience = () => {
       period: 'Aug 2021 - Aug 2022',
       location: 'India',
       type: 'Full-time',
-      description: 'Focused on real-time SLA monitoring and operations optimization through advanced Tableau dashboards and workflow automation.',
+      description: 'Built Tableau dashboards for operational performance and SLA compliance monitoring across 50 accounts.',
       companyDescription: 'An IT services startup specializing in managed infrastructure, data analytics, and customized business solutions for global clients.',
       achievements: [
-        'Delivered real-time SLA dashboards in Tableau, removing 6-hour reporting lag for 50 client accounts',
-        'Cut Tier-1 false alarms by 25% by investigating root causes and refining alert thresholds',
-        'Reduced analyst onboarding 40% by creating standardized ETL workflow guides for 8-member team',
-        'Improved data accuracy by 20% by automating validation for 10K+ SLA logs, preventing client escalations'
+        'Built Tableau dashboards to monitor operational performance and SLA compliance across 50 accounts, reducing reporting lag by 6 hours for operations managers',
+        'Investigated discrepancies through root-cause analysis on 200+ false alerts using SQL profiling and performance tuning, eliminating 60% of noise and saving 15 hours per week',
+        'Automated daily data quality audits for 10K+ SLA logs in Python, flagging 12 high-severity anomalies tied to contract penalties and supporting exception triage'
       ],
-      technologies: ['Tableau', 'SLA Monitoring', 'ETL Workflows', 'Data Validation', 'Process Automation']
+      technologies: ['Tableau', 'SQL', 'Python', 'SLA Monitoring', 'Data Validation', 'Root Cause Analysis']
     },
     {
       company: 'Visvesvaraya Technological University',
@@ -59,15 +59,13 @@ const Experience = () => {
       period: 'Jul 2020 - Jul 2021',
       location: 'India',
       type: 'Internship',
-      description: 'Automated admissions reporting and built strategic dashboards for university leadership, focusing on enrollment optimization.',
+      description: 'Developed Power BI dashboards for admissions analytics and modeled scholarship allocation using statistical methods.',
       companyDescription: 'One of India\'s premier technical universities, fostering innovation through engineering education and applied research.',
       achievements: [
-        'Saved 20 hrs/week by automating ad-hoc and recurring admissions reports using Python and SQL',
-        'Created Power BI segmentation dashboards increasing admitted-to-enrolled conversion from 34% to 38%',
-        'Enabled strategic fund reallocation by analyzing GPA-scholarship correlation using R, boosting high-performer enrollment 12%',
-        'Delivered data-driven insights through storytelling to admissions leadership, shaping scholarship criteria updates'
+        'Developed Power BI dashboards segmenting 5,000+ applicants by GPA and location, boosting enrollment conversion from 34% to 38% by highlighting high-potential segments',
+        'Modeled GPA vs. scholarship allocation using linear regression in R, providing insights that guided scholarship allocation decisions'
       ],
-      technologies: ['Python', 'SQL', 'R', 'Power BI', 'Statistical Analysis']
+      technologies: ['Power BI', 'R', 'Linear Regression', 'SQL', 'Statistical Analysis']
     }
   ];
 
