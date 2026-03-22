@@ -48,20 +48,8 @@ const Skills = () => {
     }
   ];
 
-  const tools = [
-    'Power BI', 'Python', 'SQL', 'Tableau', 'Looker', 'R', 'DAX', 'PostgreSQL', 
-    'BigQuery', 'dbt', 'A/B Testing', 'Statistical Modeling', 'ETL Workflows', 
-    'API Integration'
-  ];
 
-  const softSkills = [
-    { skill: 'Marketing Analytics', description: 'Incrementality measurement, attribution modeling, budget optimization' },
-    { skill: 'Business Intelligence', description: 'Dashboard development, ETL automation, executive reporting' },
-    { skill: 'Statistical Modeling', description: 'A/B testing, experimental design, causal inference' },
-    { skill: 'Data Storytelling', description: 'Translating complex analytics into actionable business insights' },
-    { skill: 'Process Automation', description: 'Workflow optimization, reducing manual effort through technology' },
-    { skill: 'Cross-functional Collaboration', description: 'Working with technical teams, executives, and stakeholders' }
-  ];
+  return (
 
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
