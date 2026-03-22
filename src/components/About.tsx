@@ -74,19 +74,19 @@ const About = () => {
                 <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Analytics clicked for me during Computer Science in India, data isn't just numbers, it's the foundation of every smart business decision. That insight drove me to Cleveland State for my MIS Master's, and now I'm in Cleveland, Ohio solving a problem every scaling company faces: turning data chaos into clear action.
+                    Few things I genuinely enjoy: understanding the problem, working with stakeholders to define it clearly, wrangling ugly data, and turning it into clean metrics.
                   </p>
                   <p>
-                    3+ years across enterprise operations and high-growth companies taught me this: organizations have tons of data but struggle with actionable insights.
+                    Right now at Dittra, I'm building Power BI reports for 15 paid channels and running a Python/SQL workflow that pulls from 5 ad platform APIs. That reporting shows up in weekly reviews with marketing leadership and helped steer a 20% shift from TV to email.
                   </p>
                   <p>
-                    <strong>Key wins:</strong> Automated KPI reporting (saved 140+ hours monthly) • Improved enrollment conversion 34% → 38% with intuitive dashboards • Cut reporting delays from 6 hours to real-time
+                    Before Dittra, I worked in recruiting analytics at SSi People where I built Power BI dashboards and SQL reporting across 200+ roles. Tested sourcing strategies with A/B-style testing that supported moving interview attendance from 12% to 22%, and funnel analysis that helped cut time-to-fill 45 → 31 days.
                   </p>
                   <p>
-                    My approach: Build analytics that turn complexity into clarity. When teams stop asking "What does this mean?" and start asking "What do we do next?" that's when you know it's working.
+                    I love the unglamorous part too — data gathering and cleaning, defining KPIs, or fixing broken refreshes.
                   </p>
                   <p>
-                    If your data creates more questions than answers, let's fix that.
+                    I completed my MS in Management Information Systems at Cleveland State University, and I have a Bachelor's in Computer Science.
                   </p>
                 </div>
               </div>

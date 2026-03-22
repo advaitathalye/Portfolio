@@ -119,7 +119,7 @@ const Hero = () => {
               {/* Title */}
               <FadeIn delay={0.2} className="stagger-1">
                 <h2 className="text-xl md:text-2xl font-semibold mb-4 text-foreground/90 leading-relaxed">
-                  Growth-Focused Data Analyst | Saved 140+ hours/month
+                  Data Analyst @Dittra | Business Intelligence focused
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
                   Master's grad, Data analyst with 3+ years solving the problem every company faces: drowning in data but starving for insights.

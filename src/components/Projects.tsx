@@ -49,8 +49,8 @@ const Projects = () => {
         'Improved data accessibility and credit-risk evaluation speed',
         'Created interactive dashboards with real-time loan approval trends'
       ],
-      github: 'https://github.com/advaitathalye/LendingClub-BI-Dashboard',
-      demo: 'https://github.com/advaitathalye/LendingClub-BI-Dashboard',
+      github: 'https://github.com/advaitathalye/Agent-Driven-Data-Analyst-LendingClub-Data',
+      demo: 'https://github.com/advaitathalye/Agent-Driven-Data-Analyst-LendingClub-Data',
       category: 'Business Intelligence'
     },
     {
