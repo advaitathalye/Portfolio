@@ -91,52 +91,6 @@ const Skills = () => {
               </FadeIn>
             ))}
           </div>
-
-          {/* Technical Skills */}
-          <FadeIn delay={0.3}>
-            <Card className="glass-card border-2 border-primary/20 shadow-soft mb-16 hover-lift">
-              <CardHeader>
-                <CardTitle className="flex items-center text-xl">
-                  <Cloud className="w-6 h-6 mr-3 text-primary" />
-                  Technical Skills
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 stagger-fade-in">
-                  {tools.map((tool, index) => (
-                    <div 
-                      key={index} 
-                      className="p-3 rounded-lg border border-border/20 hover:border-primary/30 hover:bg-primary/5 hover:scale-105 hover:shadow-md transition-all duration-300 text-center cursor-default"
-                    >
-                      <span className="font-medium text-foreground">{tool}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </FadeIn>
-
-          {/* Professional Skills */}
-          <FadeIn delay={0.4}>
-            <Card className="glass-card border-2 border-primary/20 shadow-soft hover-lift">
-              <CardHeader>
-                <CardTitle className="flex items-center text-xl">
-                  <Users className="w-6 h-6 mr-3 text-primary" />
-                  Professional Skills
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {softSkills.map((item, index) => (
-                    <div key={index} className="border-l-2 border-primary/20 pl-4 hover:border-primary/40 hover:translate-x-1 transition-all duration-200">
-                      <h4 className="font-semibold mb-2 hover:text-primary transition-colors">{item.skill}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </FadeIn>
         </div>
       </div>
     </section>

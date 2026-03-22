@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Cleveland, Ohio',
       href: '#'
     }
   ];
